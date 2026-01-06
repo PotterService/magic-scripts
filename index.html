@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magic Scripts</title>
+</head>
+<body>
+  <h2>Available Scripts</h2>
+
+  <button onclick="enableScript('https://raw.githubusercontent.com/YourUser/magic-scripts/main/rainbow-bar.js')">Rainbow Bar</button>
+  <button onclick="enableScript('https://raw.githubusercontent.com/YourUser/magic-scripts/main/vine-countdown.js')">Vine Countdown</button>
+
+  <script>
+    function enableScript(url) {
+      chrome.storage.local.get('enabledScripts', ({ enabledScripts }) => {
+        enabledScripts = enabledScripts || [];
+        if (!enabledScripts.includes(url)) enabledScripts.push(url);
+        chrome.storage.local.set({ enabledScripts });
+        alert('Script added: ' + url);
+      });
+    }
+  </script>
+</body>
+</html>
