@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Bow YouTube Stats</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bow YouTube Watch Tracker Info</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,102 +17,134 @@ body {
     color: white;
 }
 
-header {
-    padding: 24px;
-    background: linear-gradient(90deg, #ff0033, #7c3aed);
+.hero {
+    padding: 70px 20px;
     text-align: center;
+    background:
+        radial-gradient(circle at top, rgba(255,0,51,0.45), transparent 45%),
+        linear-gradient(135deg, #160000, #0b0b0f 60%);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-header h1 {
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #ff0033;
+    border-radius: 999px;
+    color: #ff4d6d;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 44px;
     margin: 0;
-    font-size: 34px;
 }
 
-.dashboard {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
+.hero p {
+    max-width: 720px;
+    margin: 16px auto 0;
+    color: #cfcfcf;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 36px 20px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
 
 .card {
     background: #15151d;
     border: 1px solid #2a2a38;
-    border-radius: 18px;
-    padding: 22px;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
+.card h2,
 .card h3 {
-    margin: 0;
-    color: #aaa;
-    font-size: 14px;
+    margin-top: 0;
+    color: #ff4d6d;
 }
 
-.big {
-    margin-top: 12px;
-    font-size: 34px;
+.card p,
+.card li {
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+.wide {
+    grid-column: span 3;
+}
+
+.two {
+    grid-column: span 2;
+}
+
+.steps {
+    counter-reset: step;
+}
+
+.step {
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.num {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #ff0033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
 }
 
-.green { color: #00ff88; }
+.notice {
+    border-color: #ff0033;
+    background: linear-gradient(135deg, rgba(255,0,51,0.16), #15151d);
+}
 
-.wide { grid-column: span 2; }
-
-.bar {
-    height: 14px;
-    background: #242433;
-    border-radius: 99px;
-    overflow: hidden;
+.code {
     margin-top: 12px;
-}
-
-.fill {
-    height: 100%;
-    background: linear-gradient(90deg, #ff0033, #7c3aed);
-    width: 0%;
-}
-
-.section { margin-top: 26px; }
-
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.video {
-    display: flex;
-    justify-content: space-between;
-    background: #111118;
+    background: #08080c;
+    color: #ffb3c0;
+    border: 1px solid #333;
     padding: 14px;
     border-radius: 12px;
-    border: 1px solid #2a2a38;
-}
-
-.empty {
-    color: #aaa;
-    margin-top: 12px;
+    font-family: Consolas, monospace;
+    overflow-x: auto;
 }
 
 .footer {
     text-align: center;
     color: #777;
-    margin: 30px;
+    padding: 30px;
     font-size: 12px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     .grid {
         grid-template-columns: 1fr;
     }
 
-    .wide {
+    .wide,
+    .two {
         grid-column: span 1;
+    }
+
+    .hero h1 {
+        font-size: 34px;
     }
 }
 </style>
@@ -115,174 +152,128 @@ header h1 {
 
 <body>
 
-<header>
-    <h1>Bow YouTube Stats</h1>
-    <p>Creator dashboard powered by Bow Service</p>
-</header>
+<section class="hero">
+    <div class="badge">Bow YouTube Tool</div>
+    <h1>YouTube Watch Time Tracker Pro Plus</h1>
+    <p>
+        A custom Bow script that tracks your YouTube watch time, watched videos,
+        top channels, and local leaderboard directly in your browser.
+    </p>
+</section>
 
-<div class="dashboard">
+<main class="wrap">
 
-    <div class="grid">
+    <section class="grid">
+
         <div class="card">
-            <h3>Total Watch Time</h3>
-            <div id="watchTime" class="big">0h</div>
+            <h3>What It Does</h3>
+            <p>
+                Tracks how long you watch YouTube videos and saves stats by channel.
+                It can show total watch time, videos watched, and your top channels.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Videos Watched</h3>
-            <div id="videosWatched" class="big">0</div>
+            <h3>Local Stats</h3>
+            <p>
+                Your stats are saved locally in your browser using localStorage.
+                No account, cloud upload, or outside database is required.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Channels Tracked</h3>
-            <div id="channelsTracked" class="big">0</div>
+            <h3>Leaderboard</h3>
+            <p>
+                The script includes a leaderboard so you can see which YouTube
+                channels you watch the most.
+            </p>
         </div>
 
-        <div class="card">
-            <h3>Today</h3>
-            <div id="todayTime" class="big green">0h</div>
+        <div class="card wide notice">
+            <h2>Privacy Notice</h2>
+            <p>
+                This tracker is local-only. Your YouTube watch stats are saved on your device
+                inside your browser. Bow Service does not upload, sell, share, or store your
+                stats on an outside server.
+            </p>
         </div>
 
-        <div class="card wide">
-            <h3>Daily Goal</h3>
-            <div class="big"><span id="goalPercent">0</span>%</div>
-            <div class="bar">
-                <div id="goalFill" class="fill"></div>
+        <div class="card two">
+            <h2>How To Use</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="num">1</div>
+                    <p>Install and enable the YouTube tracker script in Magic Scripts.</p>
+                </div>
+
+                <div class="step">
+                    <div class="num">2</div>
+                    <p>Open YouTube and watch videos normally.</p>
+                </div>
+
+                <div class="step">
+                    <div class="num">3</div>
+                    <p>Click the tracker or View Stats button to open your leaderboard.</p>
+                </div>
+
+                <div class="step">
+                    <div class="num">4</div>
+                    <p>Use Export Data if you want to back up your stats.</p>
+                </div>
             </div>
         </div>
 
-        <div class="card wide">
-            <h3>Top Channel</h3>
-            <div id="topChannel" class="big">None yet</div>
+        <div class="card">
+            <h2>Saved Data Keys</h2>
+            <p>
+                The script stores data under these local browser keys:
+            </p>
+
+            <div class="code">ytChannelStatsSafe</div>
+            <div class="code">ytVideoWatchStatsSafe</div>
         </div>
-    </div>
 
-    <div class="section card">
-        <h3>Recent Videos</h3>
-        <div id="recentVideos" class="list"></div>
-    </div>
+        <div class="card">
+            <h3>Channel Tracking</h3>
+            <p>
+                Saves watch time by channel, channel videos watched, channel URL,
+                and channel logo when available.
+            </p>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>Video Tracking</h3>
+            <p>
+                Saves video title, channel name, total seconds watched,
+                and how many times the video was watched.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Export / Import</h3>
+            <p>
+                The built-in settings panel lets you export your tracker data as JSON
+                and import it again later.
+            </p>
+        </div>
+
+        <div class="card wide">
+            <h2>Important</h2>
+            <p>
+                If you clear browser data, reset the script, uninstall the script,
+                or use another browser profile, your saved tracker stats may be removed.
+                Export your data if you want a backup.
+            </p>
+        </div>
+
+    </section>
+
+</main>
 
 <div class="footer">
-    Designed and deployed by Bow
+    Designed and deployed by Bow • Local-only YouTube watch tracking
 </div>
-
-<script>
-const STORAGE_KEY = "ytChannelStatsSafe";
-const VIDEO_KEY = "ytVideoWatchStatsSafe";
-
-function safeParse(key, fallback) {
-    try {
-        return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback));
-    } catch (e) {
-        return fallback;
-    }
-}
-
-const channelStats = safeParse(STORAGE_KEY, {});
-const videoStats = safeParse(VIDEO_KEY, []);
-
-let totalWatchMinutes = 0;
-let totalVideos = 0;
-let topChannel = "None yet";
-let topMinutes = 0;
-
-const channelEntries = Object.entries(channelStats);
-
-channelEntries.forEach(([channel, data]) => {
-    const minutes =
-        data.watchMinutes ||
-        data.minutes ||
-        Math.floor((data.watchSeconds || 0) / 60) ||
-        0;
-
-    totalWatchMinutes += minutes;
-
-    totalVideos +=
-        data.videoCount ||
-        data.videosWatched ||
-        0;
-
-    if (minutes > topMinutes) {
-        topMinutes = minutes;
-        topChannel = channel;
-    }
-});
-
-const recentVideos = Array.isArray(videoStats)
-    ? videoStats.slice(-8).reverse()
-    : Object.values(videoStats).slice(-8).reverse();
-
-const todayMinutes = Math.floor(totalWatchMinutes * 0.12);
-const dailyGoalMinutes = 300;
-
-const stats = {
-    totalWatchHours: (totalWatchMinutes / 60).toFixed(1),
-    videosWatched: totalVideos || recentVideos.length,
-    channelsTracked: channelEntries.length,
-    todayWatchHours: (todayMinutes / 60).toFixed(1),
-    dailyGoalHours: dailyGoalMinutes / 60,
-    topChannel: topChannel,
-    recentVideos: recentVideos.map(video => ({
-        title: video.title || video.videoTitle || "Unknown Video",
-        channel: video.channel || video.channelName || "Unknown Channel",
-        time: Math.floor((video.watchSeconds || video.seconds || 0) / 60) + " min"
-    }))
-};
-
-function loadDashboard() {
-    document.getElementById("watchTime").textContent =
-        stats.totalWatchHours + "h";
-
-    document.getElementById("videosWatched").textContent =
-        stats.videosWatched;
-
-    document.getElementById("channelsTracked").textContent =
-        stats.channelsTracked;
-
-    document.getElementById("todayTime").textContent =
-        stats.todayWatchHours + "h";
-
-    document.getElementById("topChannel").textContent =
-        stats.topChannel;
-
-    const percent = Math.min(
-        Math.round((stats.todayWatchHours / stats.dailyGoalHours) * 100),
-        100
-    );
-
-    document.getElementById("goalPercent").textContent = percent;
-    document.getElementById("goalFill").style.width = percent + "%";
-
-    const recent = document.getElementById("recentVideos");
-    recent.innerHTML = "";
-
-    if (stats.recentVideos.length === 0) {
-        recent.innerHTML = `<div class="empty">No saved YouTube stats found yet.</div>`;
-        return;
-    }
-
-    stats.recentVideos.forEach(video => {
-        const row = document.createElement("div");
-        row.className = "video";
-
-        row.innerHTML = `
-            <div>
-                <strong>${video.title}</strong><br>
-                <span style="color:#aaa;">${video.channel}</span>
-            </div>
-            <div style="color:#00ff88;">
-                ${video.time}
-            </div>
-        `;
-
-        recent.appendChild(row);
-    });
-}
-
-loadDashboard();
-</script>
 
 </body>
 </html>
