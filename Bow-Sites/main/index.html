@@ -1,24 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bow Service Self Hosted Sites</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050505, #101828, #1e1b4b);
+    color: white;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 24px;
+    text-align: center;
+    background: rgba(0,0,0,0.45);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.header h1 {
+    margin: 0;
+    color: #00ff66;
+    font-size: 30px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #aaa;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.9fr;
+    gap: 28px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 22px;
+    padding: 34px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+}
+
+.main-card h2 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.main-card p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+input {
+    width: 100%;
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid #00ff66;
+    background: #050505;
+    color: #00ff66;
+    font-size: 22px;
+    text-align: center;
+    outline: none;
+}
+
+input::placeholder {
+    color: #557c66;
+}
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 14px;
+    border: none;
+    background: #00ff66;
+    color: #050505;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #22c55e;
+}
+
+.error {
+    margin-top: 16px;
+    color: #ff9f9f;
+    font-weight: bold;
+}
+
+.disclaimer h3 {
+    margin-top: 0;
+    color: #00ff66;
+}
+
+.disclaimer p {
+    color: #cfcfcf;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.example {
+    margin-top: 18px;
+    padding: 14px;
+    background: rgba(0,0,0,0.35);
+    border-radius: 14px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.loading {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.94);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999999;
+}
+
+.spinner {
+    width: 90px;
+    height: 90px;
+    border: 6px solid rgba(255,255,255,0.2);
+    border-top: 6px solid #00ff66;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 24px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    .page {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+}
+</style>
 </head>
 
-<body style="background:#111;color:white;font-family:Arial;text-align:center;padding-top:120px;">
+<body>
 
-<h1>Bow Service Self Hosted Sites</h1>
+<div class="header">
+    <h1>Bow Service Self Hosted Sites</h1>
+    <p>Private launcher for Bow-hosted custom websites</p>
+</div>
 
-<h2>Enter domain or URL below</h2>
+<div class="page">
 
-<input id="domainInput" placeholder="test.bow" style="padding:15px;font-size:22px;width:300px;text-align:center;">
+    <div class="card main-card">
+        <h2>Enter Bow Domain</h2>
 
-<br><br>
+        <p>
+            Type a Bow hosted address below to open a saved site from the Bow Service GitHub system.
+        </p>
 
-<button id="openBtn" style="padding:15px 30px;font-size:18px;">
-Open Site
-</button>
+        <input id="domainInput" placeholder="example: test.bow" autofocus>
 
-<p id="error" style="color:#ff9999;font-weight:bold;"></p>
+        <button id="openBtn">Open Bow Site</button>
+
+        <div id="error" class="error"></div>
+
+        <div class="example">
+            Example: <strong>test.bow</strong> opens folder <strong>Bow-Sites/test-bow/</strong>
+        </div>
+    </div>
+
+    <div class="card disclaimer">
+        <h3>Disclaimer</h3>
+
+        <p>
+            This address bar is only used for Bow hosted sites.
+        </p>
+
+        <p>
+            It does not access outside domains, public websites, or normal internet addresses.
+        </p>
+
+        <p>
+            Bow domains are converted into folder names inside the Bow-Sites GitHub directory.
+        </p>
+
+        <div class="example">
+            test.bow → test-bow<br>
+            cards.personal → cards-personal
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    Designed and deployed by Bow
+</div>
+
+<div id="loading" class="loading">
+    <div class="spinner"></div>
+    <h2>The magical service of Bow is loading</h2>
+    <p>Please wait...</p>
+</div>
 
 <script>
 const GITHUB_USER = "PotterService";
@@ -32,7 +237,7 @@ function openSite() {
     error.textContent = "";
 
     if (!input) {
-        error.textContent = "Please enter a domain.";
+        error.textContent = "Please enter a Bow domain.";
         return;
     }
 
@@ -43,7 +248,7 @@ function openSite() {
         .replace(/\/$/, "");
 
     if (!clean.includes(".")) {
-        error.textContent = "Enter a domain like test.bow";
+        error.textContent = "Enter a full Bow domain like test.bow.";
         return;
     }
 
@@ -60,7 +265,11 @@ function openSite() {
         folderName +
         "/";
 
-    window.location.href = finalUrl;
+    document.getElementById("loading").style.display = "flex";
+
+    setTimeout(() => {
+        window.location.href = finalUrl;
+    }, 1200);
 }
 
 document.getElementById("openBtn").onclick = openSite;
