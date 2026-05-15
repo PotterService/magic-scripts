@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bow Private Chat Concept</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #080812;
+    color: white;
+}
+
+.hero {
+    padding: 70px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #111827, #4c1d95);
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #a78bfa;
+    border-radius: 999px;
+    color: #c4b5fd;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin: 0;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: 16px auto 0;
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: auto;
+    padding: 36px 20px;
+}
+
+.notice {
+    background: rgba(167,139,250,0.12);
+    border: 1px solid #8b5cf6;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #151522;
+    border: 1px solid #2e2e46;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.card h2,
+.card h3 {
+    margin-top: 0;
+    color: #c4b5fd;
+}
+
+.card p,
+.card li {
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+.wide {
+    grid-column: span 3;
+}
+
+.two {
+    grid-column: span 2;
+}
+
+.flow {
+    display: grid;
+    gap: 12px;
+}
+
+.step {
+    padding: 14px;
+    border-radius: 14px;
+    background: #0f0f1a;
+    border: 1px solid #33334d;
+}
+
+.code {
+    background: #0b0b14;
+    border: 1px solid #33334d;
+    color: #a7f3d0;
+    padding: 14px;
+    border-radius: 12px;
+    font-family: Consolas, monospace;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.status {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    padding: 30px;
+    font-size: 12px;
+}
+
+@media (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wide,
+    .two {
+        grid-column: span 1;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="badge">Future Bow Service Idea</div>
+    <h1>Bow Private Chat</h1>
+    <p>
+        A future private chat system where users bring their own Firebase project,
+        control their own data, and create invite-only chat rooms.
+    </p>
+</section>
+
+<main class="wrap">
+
+    <div class="notice">
+        <strong>Status:</strong>
+        <span class="status">Concept only — not added yet.</span>
+        This page explains a possible future feature for Bow Service.
+    </div>
+
+    <section class="grid">
+
+        <div class="card">
+            <h3>User-Owned Data</h3>
+            <p>
+                Users would create their own Firebase project and paste their Firebase
+                config into Bow Private Chat settings.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Private Rooms</h3>
+            <p>
+                Users could create rooms, set a username, invite friends, and chat inside
+                rooms they control.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>No Bow Storage</h3>
+            <p>
+                Bow would provide the interface, while messages stay inside the user’s
+                own Firebase project.
+            </p>
+        </div>
+
+        <div class="card two">
+            <h2>How It Would Work</h2>
+
+            <div class="flow">
+                <div class="step">1. Open Bow Private Chat.</div>
+                <div class="step">2. Enter username.</div>
+                <div class="step">3. Paste Firebase config in settings.</div>
+                <div class="step">4. Create or join a private room.</div>
+                <div class="step">5. Send messages, images, and files.</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Future Features</h2>
+            <ul>
+                <li>Text chat</li>
+                <li>Invite room codes</li>
+                <li>Room passwords</li>
+                <li>Image uploads</li>
+                <li>File downloads</li>
+                <li>Clear/wipe room</li>
+                <li>Admin controls</li>
+            </ul>
+        </div>
+
+        <div class="card wide">
+            <h2>Firebase Settings</h2>
+            <p>
+                Users would paste their own Firebase details into a settings screen.
+                This keeps Bow from owning or storing private messages.
+            </p>
+
+            <div class="code">
+apiKey<br>
+authDomain<br>
+projectId<br>
+storageBucket<br>
+messagingSenderId<br>
+appId
+            </div>
+        </div>
+
+        <div class="card wide">
+            <h2>Important Privacy Note</h2>
+            <p>
+                Bow Private Chat would not be a full encrypted messenger like Signal.
+                It would be a user-controlled chat system where privacy depends on the
+                user’s Firebase setup, room settings, and security rules.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<div class="footer">
+    Designed and deployed by Bow • Future concept page
+</div>
+
+</body>
+</html>
