@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bow YouTube Stats</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0f;
+    color: white;
+}
+
+header {
+    padding: 24px;
+    background: linear-gradient(90deg, #ff0033, #7c3aed);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #15151d;
+    border: 1px solid #2a2a38;
+    border-radius: 18px;
+    padding: 22px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.big {
+    margin-top: 12px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.green { color: #00ff88; }
+
+.wide { grid-column: span 2; }
+
+.bar {
+    height: 14px;
+    background: #242433;
+    border-radius: 99px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff0033, #7c3aed);
+    width: 0%;
+}
+
+.section { margin-top: 26px; }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.video {
+    display: flex;
+    justify-content: space-between;
+    background: #111118;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #2a2a38;
+}
+
+.empty {
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    margin: 30px;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wide {
+        grid-column: span 1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bow YouTube Stats</h1>
+    <p>Creator dashboard powered by Bow Service</p>
+</header>
+
+<div class="dashboard">
+
+    <div class="grid">
+        <div class="card">
+            <h3>Total Watch Time</h3>
+            <div id="watchTime" class="big">0h</div>
+        </div>
+
+        <div class="card">
+            <h3>Videos Watched</h3>
+            <div id="videosWatched" class="big">0</div>
+        </div>
+
+        <div class="card">
+            <h3>Channels Tracked</h3>
+            <div id="channelsTracked" class="big">0</div>
+        </div>
+
+        <div class="card">
+            <h3>Today</h3>
+            <div id="todayTime" class="big green">0h</div>
+        </div>
+
+        <div class="card wide">
+            <h3>Daily Goal</h3>
+            <div class="big"><span id="goalPercent">0</span>%</div>
+            <div class="bar">
+                <div id="goalFill" class="fill"></div>
+            </div>
+        </div>
+
+        <div class="card wide">
+            <h3>Top Channel</h3>
+            <div id="topChannel" class="big">None yet</div>
+        </div>
+    </div>
+
+    <div class="section card">
+        <h3>Recent Videos</h3>
+        <div id="recentVideos" class="list"></div>
+    </div>
+
+</div>
+
+<div class="footer">
+    Designed and deployed by Bow
+</div>
+
+<script>
+const STORAGE_KEY = "ytChannelStatsSafe";
+const VIDEO_KEY = "ytVideoWatchStatsSafe";
+
+function safeParse(key, fallback) {
+    try {
+        return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback));
+    } catch (e) {
+        return fallback;
+    }
+}
+
+const channelStats = safeParse(STORAGE_KEY, {});
+const videoStats = safeParse(VIDEO_KEY, []);
+
+let totalWatchMinutes = 0;
+let totalVideos = 0;
+let topChannel = "None yet";
+let topMinutes = 0;
+
+const channelEntries = Object.entries(channelStats);
+
+channelEntries.forEach(([channel, data]) => {
+    const minutes =
+        data.watchMinutes ||
+        data.minutes ||
+        Math.floor((data.watchSeconds || 0) / 60) ||
+        0;
+
+    totalWatchMinutes += minutes;
+
+    totalVideos +=
+        data.videoCount ||
+        data.videosWatched ||
+        0;
+
+    if (minutes > topMinutes) {
+        topMinutes = minutes;
+        topChannel = channel;
+    }
+});
+
+const recentVideos = Array.isArray(videoStats)
+    ? videoStats.slice(-8).reverse()
+    : Object.values(videoStats).slice(-8).reverse();
+
+const todayMinutes = Math.floor(totalWatchMinutes * 0.12);
+const dailyGoalMinutes = 300;
+
+const stats = {
+    totalWatchHours: (totalWatchMinutes / 60).toFixed(1),
+    videosWatched: totalVideos || recentVideos.length,
+    channelsTracked: channelEntries.length,
+    todayWatchHours: (todayMinutes / 60).toFixed(1),
+    dailyGoalHours: dailyGoalMinutes / 60,
+    topChannel: topChannel,
+    recentVideos: recentVideos.map(video => ({
+        title: video.title || video.videoTitle || "Unknown Video",
+        channel: video.channel || video.channelName || "Unknown Channel",
+        time: Math.floor((video.watchSeconds || video.seconds || 0) / 60) + " min"
+    }))
+};
+
+function loadDashboard() {
+    document.getElementById("watchTime").textContent =
+        stats.totalWatchHours + "h";
+
+    document.getElementById("videosWatched").textContent =
+        stats.videosWatched;
+
+    document.getElementById("channelsTracked").textContent =
+        stats.channelsTracked;
+
+    document.getElementById("todayTime").textContent =
+        stats.todayWatchHours + "h";
+
+    document.getElementById("topChannel").textContent =
+        stats.topChannel;
+
+    const percent = Math.min(
+        Math.round((stats.todayWatchHours / stats.dailyGoalHours) * 100),
+        100
+    );
+
+    document.getElementById("goalPercent").textContent = percent;
+    document.getElementById("goalFill").style.width = percent + "%";
+
+    const recent = document.getElementById("recentVideos");
+    recent.innerHTML = "";
+
+    if (stats.recentVideos.length === 0) {
+        recent.innerHTML = `<div class="empty">No saved YouTube stats found yet.</div>`;
+        return;
+    }
+
+    stats.recentVideos.forEach(video => {
+        const row = document.createElement("div");
+        row.className = "video";
+
+        row.innerHTML = `
+            <div>
+                <strong>${video.title}</strong><br>
+                <span style="color:#aaa;">${video.channel}</span>
+            </div>
+            <div style="color:#00ff88;">
+                ${video.time}
+            </div>
+        `;
+
+        recent.appendChild(row);
+    });
+}
+
+loadDashboard();
+</script>
+
+</body>
+</html>
