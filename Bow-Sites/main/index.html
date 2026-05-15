@@ -1,57 +1,53 @@
-function openSite(){
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bow Service Self Hosted Sites</title>
+</head>
 
-    const input =
-        document
-        .getElementById("domainInput")
-        .value
-        .trim();
+<body style="background:#111;color:white;font-family:Arial;text-align:center;padding-top:120px;">
 
-    const error =
-        document
-        .getElementById("error");
+<h1>Bow Service Self Hosted Sites</h1>
+
+<h2>Enter domain or URL below</h2>
+
+<input id="domainInput" placeholder="test.bow" style="padding:15px;font-size:22px;width:300px;text-align:center;">
+
+<br><br>
+
+<button id="openBtn" style="padding:15px 30px;font-size:18px;">
+Open Site
+</button>
+
+<p id="error" style="color:#ff9999;font-weight:bold;"></p>
+
+<script>
+const GITHUB_USER = "PotterService";
+const REPO_NAME = "magic-scripts";
+const BOW_SITES_PATH = "Bow-Sites";
+
+function openSite() {
+    const input = document.getElementById("domainInput").value.trim();
+    const error = document.getElementById("error");
 
     error.textContent = "";
 
-    if(!input){
-
-        error.textContent =
-            "Please enter a domain.";
-
+    if (!input) {
+        error.textContent = "Please enter a domain.";
         return;
     }
 
-    // CLEAN INPUT
-
-    let clean =
-        input
+    let clean = input
         .toLowerCase()
-        .replace(/^https?:\/\//,"")
-        .replace(/^www\./,"")
-        .replace(/\/$/,"");
+        .replace(/^https?:\/\//, "")
+        .replace(/^www\./, "")
+        .replace(/\/$/, "");
 
-    // MUST CONTAIN .
-
-    if(!clean.includes(".")){
-
-        error.textContent =
-            "Enter a full domain like test.bow";
-
+    if (!clean.includes(".")) {
+        error.textContent = "Enter a domain like test.bow";
         return;
     }
 
-    // CONVERT DOTS TO DASHES
-
-    const folderName =
-        clean.replace(/\./g,"-");
-
-    // SHOW LOADING
-
-    document
-        .getElementById("loading")
-        .style
-        .display = "flex";
-
-    // FINAL URL
+    const folderName = clean.replace(/\./g, "-");
 
     const finalUrl =
         "https://" +
@@ -64,12 +60,17 @@ function openSite(){
         folderName +
         "/";
 
-    // DELAY
-
-    setTimeout(() => {
-
-        window.location.href = finalUrl;
-
-    },1500);
-
+    window.location.href = finalUrl;
 }
+
+document.getElementById("openBtn").onclick = openSite;
+
+document.getElementById("domainInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        openSite();
+    }
+});
+</script>
+
+</body>
+</html>
