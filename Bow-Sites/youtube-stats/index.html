@@ -131,6 +131,17 @@ body {
     color: #777;
     padding: 30px;
     font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 40px;
+}
+
+a {
+    color: #ff4d6d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 850px) {
@@ -153,126 +164,221 @@ body {
 <body>
 
 <section class="hero">
-    <div class="badge">Bow YouTube Tool</div>
+    <div class="badge">Open Source • GitHub Available</div>
+
     <h1>YouTube Watch Time Tracker Pro Plus</h1>
+
     <p>
-        A custom Bow script that tracks your YouTube watch time, watched videos,
-        top channels, and local leaderboard directly in your browser.
+        A custom Bow script that tracks your YouTube watch time,
+        watched videos, top channels, and local leaderboard directly in your browser.
+    </p>
+
+    <p>
+        Fully open source and community editable.
+        Built by Bow Service for creators, developers, and YouTube users.
     </p>
 </section>
 
 <main class="wrap">
 
-    <section class="grid">
+<section class="grid">
 
-        <div class="card">
-            <h3>What It Does</h3>
-            <p>
-                Tracks how long you watch YouTube videos and saves stats by channel.
-                It can show total watch time, videos watched, and your top channels.
-            </p>
-        </div>
+    <div class="card">
+        <h3>What It Does</h3>
 
-        <div class="card">
-            <h3>Local Stats</h3>
-            <p>
-                Your stats are saved locally in your browser using localStorage.
-                No account, cloud upload, or outside database is required.
-            </p>
-        </div>
+        <p>
+            Tracks how long you watch YouTube videos and saves stats by channel.
+            It can show total watch time, videos watched, and your top channels.
+        </p>
+    </div>
 
-        <div class="card">
-            <h3>Leaderboard</h3>
-            <p>
-                The script includes a leaderboard so you can see which YouTube
-                channels you watch the most.
-            </p>
-        </div>
+    <div class="card">
+        <h3>Local Stats</h3>
 
-        <div class="card wide notice">
-            <h2>Privacy Notice</h2>
-            <p>
-                This tracker is local-only. Your YouTube watch stats are saved on your device
-                inside your browser. Bow Service does not upload, sell, share, or store your
-                stats on an outside server.
-            </p>
-        </div>
+        <p>
+            Your stats are saved locally in your browser using localStorage.
+            No account, cloud upload, or outside database is required.
+        </p>
+    </div>
 
-        <div class="card two">
-            <h2>How To Use</h2>
+    <div class="card">
+        <h3>Leaderboard</h3>
 
-            <div class="steps">
-                <div class="step">
-                    <div class="num">1</div>
-                    <p>Install and enable the YouTube tracker script in Magic Scripts.</p>
-                </div>
+        <p>
+            The script includes a leaderboard so you can see which YouTube
+            channels you watch the most.
+        </p>
+    </div>
 
-                <div class="step">
-                    <div class="num">2</div>
-                    <p>Open YouTube and watch videos normally.</p>
-                </div>
+    <div class="card wide notice">
+        <h2>Privacy Notice</h2>
 
-                <div class="step">
-                    <div class="num">3</div>
-                    <p>Click the tracker or View Stats button to open your leaderboard.</p>
-                </div>
+        <p>
+            This tracker is local-only. Your YouTube watch stats are stored directly
+            inside your browser using localStorage.
+        </p>
 
-                <div class="step">
-                    <div class="num">4</div>
-                    <p>Use Export Data if you want to back up your stats.</p>
-                </div>
+        <p>
+            Bow Service does not upload, collect, sell, transmit,
+            or store your viewing data on external servers.
+        </p>
+
+        <p>
+            Exported backup files are fully controlled by the user.
+        </p>
+    </div>
+
+    <div class="card two">
+        <h2>How To Use</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="num">1</div>
+                <p>Install and enable the YouTube tracker script in Magic Scripts.</p>
             </div>
+
+            <div class="step">
+                <div class="num">2</div>
+                <p>Open YouTube and watch videos normally.</p>
+            </div>
+
+            <div class="step">
+                <div class="num">3</div>
+                <p>Click the tracker or View Stats button to open your leaderboard.</p>
+            </div>
+
+            <div class="step">
+                <div class="num">4</div>
+                <p>Use Export Data if you want to back up your stats.</p>
+            </div>
+
         </div>
+    </div>
 
-        <div class="card">
-            <h2>Saved Data Keys</h2>
-            <p>
-                The script stores data under these local browser keys:
-            </p>
+    <div class="card">
+        <h2>Saved Data Keys</h2>
 
-            <div class="code">ytChannelStatsSafe</div>
-            <div class="code">ytVideoWatchStatsSafe</div>
-        </div>
+        <p>
+            The script stores data under these local browser keys:
+        </p>
 
-        <div class="card">
-            <h3>Channel Tracking</h3>
-            <p>
-                Saves watch time by channel, channel videos watched, channel URL,
-                and channel logo when available.
-            </p>
-        </div>
+        <div class="code">ytChannelStatsSafe</div>
+        <div class="code">ytVideoWatchStatsSafe</div>
+    </div>
 
-        <div class="card">
-            <h3>Video Tracking</h3>
-            <p>
-                Saves video title, channel name, total seconds watched,
-                and how many times the video was watched.
-            </p>
-        </div>
+    <div class="card">
+        <h3>Channel Tracking</h3>
 
-        <div class="card">
-            <h3>Export / Import</h3>
-            <p>
-                The built-in settings panel lets you export your tracker data as JSON
-                and import it again later.
-            </p>
-        </div>
+        <p>
+            Saves watch time by channel, channel videos watched,
+            channel URL, and channel logo when available.
+        </p>
+    </div>
 
-        <div class="card wide">
-            <h2>Important</h2>
-            <p>
-                If you clear browser data, reset the script, uninstall the script,
-                or use another browser profile, your saved tracker stats may be removed.
-                Export your data if you want a backup.
-            </p>
-        </div>
+    <div class="card">
+        <h3>Video Tracking</h3>
 
-    </section>
+        <p>
+            Saves video title, channel name, total seconds watched,
+            and how many times the video was watched.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Export / Import</h3>
+
+        <p>
+            The built-in settings panel lets you export your tracker data as JSON
+            and import it again later.
+        </p>
+    </div>
+
+    <div class="card wide">
+        <h2>Important</h2>
+
+        <p>
+            If you clear browser data, reset the script, uninstall the script,
+            or use another browser profile, your saved tracker stats may be removed.
+        </p>
+
+        <p>
+            Export your data if you want a backup.
+        </p>
+    </div>
+
+    <div class="card wide">
+        <h2>Open Source & Terms of Use</h2>
+
+        <p>
+            The Bow YouTube Watch Tracker is open source software.
+            The full source code is publicly available on GitHub.
+        </p>
+
+        <p>
+            Everyone is free to:
+        </p>
+
+        <ul>
+            <li>Use the software</li>
+            <li>Edit the code</li>
+            <li>Modify features</li>
+            <li>Create custom versions</li>
+            <li>Share improvements</li>
+            <li>Learn from the project</li>
+        </ul>
+
+        <p>
+            This project is intended to remain free for the community.
+        </p>
+
+        <p>
+            While modifications and personal versions are allowed,
+            Bow Service respectfully requests that users do not resell
+            the public code or claim the original project as their own.
+        </p>
+
+        <p>
+            Please give credit where credit is due.
+        </p>
+
+        <p>
+            This software is provided "as is" without warranties or guarantees.
+            Users assume responsibility for any modifications or usage.
+        </p>
+    </div>
+
+    <div class="card wide notice">
+        <h2>Disclaimer</h2>
+
+        <p>
+            This project is an independent browser tool and is not affiliated with,
+            endorsed by, or connected to YouTube or Google.
+        </p>
+
+        <p>
+            All trademarks and platform names belong to their respective owners.
+        </p>
+
+        <p>
+            Bow Service is not responsible for:
+        </p>
+
+        <ul>
+            <li>Lost data</li>
+            <li>Browser issues</li>
+            <li>Third-party modifications</li>
+            <li>Compatibility problems</li>
+            <li>Changes made by YouTube or browser updates</li>
+        </ul>
+    </div>
+
+</section>
 
 </main>
 
 <div class="footer">
-    Designed and deployed by Bow • Local-only YouTube watch tracking
+    © 2026 Bow Service • Open Source Community Project • Please Credit Original Developers
 </div>
 
 </body>
