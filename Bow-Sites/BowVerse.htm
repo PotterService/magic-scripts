@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BowVerse</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+:root{
+    --card:rgba(255,255,255,0.08);
+    --green:#00ff66;
+    --blue:#38bdf8;
+    --purple:#8b5cf6;
+    --yellow:#facc15;
+    --red:#ff5c5c;
+    --muted:#aab3d1;
+    --border:rgba(255,255,255,0.12);
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+    color:white;
+    background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(139,92,246,0.24), transparent 35%),
+        linear-gradient(135deg,#050505,#101828,#1e1b4b);
+}
+
+.header{
+    text-align:center;
+    padding:58px 20px;
+    background:rgba(0,0,0,0.42);
+    border-bottom:1px solid var(--border);
+}
+
+.logo{
+    width:105px;
+    height:105px;
+    margin:0 auto 20px;
+    border-radius:30px;
+    background:linear-gradient(135deg,var(--green),var(--blue),var(--purple));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:52px;
+    box-shadow:0 18px 50px rgba(0,0,0,0.45);
+}
+
+h1{
+    margin:0;
+    color:var(--green);
+    font-size:52px;
+}
+
+.subtitle{
+    max-width:900px;
+    margin:14px auto 0;
+    color:var(--muted);
+    line-height:1.75;
+    font-size:18px;
+}
+
+.badges{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+    margin-top:24px;
+}
+
+.badge{
+    padding:8px 14px;
+    border-radius:999px;
+    background:rgba(0,255,102,0.12);
+    border:1px solid rgba(0,255,102,0.35);
+    color:#a7f3d0;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.page{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.card{
+    background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.28));
+    border:1px solid var(--border);
+    border-radius:26px;
+    padding:32px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.45);
+    margin-bottom:24px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+h2{
+    margin-top:0;
+    color:var(--green);
+    font-size:30px;
+}
+
+h3{
+    margin-top:0;
+    color:#bae6fd;
+    font-size:24px;
+}
+
+p{
+    color:#c7cce0;
+    line-height:1.75;
+}
+
+ul{
+    color:#c7cce0;
+    line-height:1.9;
+    padding-left:22px;
+}
+
+.system-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.system-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at top right, rgba(56,189,248,0.12), transparent 35%);
+    pointer-events:none;
+}
+
+.status{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 12px;
+    border-radius:999px;
+    background:rgba(0,255,102,0.12);
+    border:1px solid rgba(0,255,102,0.35);
+    color:#a7f3d0;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.future{
+    border-left:4px solid var(--yellow);
+}
+
+.future h2{
+    color:#fde68a;
+}
+
+.warning{
+    border-left:4px solid var(--red);
+}
+
+.warning h2{
+    color:#ffb4b4;
+}
+
+.button-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.button{
+    display:inline-block;
+    padding:14px 20px;
+    border-radius:16px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#050505;
+    background:linear-gradient(135deg,var(--green),#22c55e);
+}
+
+.button.secondary{
+    color:white;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+}
+
+.footer{
+    text-align:center;
+    color:#777;
+    font-size:12px;
+    margin:42px 0 30px;
+}
+
+@media(max-width:700px){
+    h1{
+        font-size:40px;
+    }
+
+    .card{
+        padding:24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">✨</div>
+
+    <h1>BowVerse</h1>
+
+    <div class="subtitle">
+        BowVerse is the home for Bow’s experimental browser tools,
+        MiniNet routing, Magic Scripts, custom dashboards, creator systems,
+        and future web-powered projects.
+    </div>
+
+    <div class="badges">
+        <span class="badge">MiniNet</span>
+        <span class="badge">Magic Scripts</span>
+        <span class="badge">Bow Sites</span>
+        <span class="badge">Browser Tools</span>
+        <span class="badge">Experimental Web</span>
+    </div>
+</div>
+
+<div class="page">
+
+    <div class="card">
+        <h2>What Is BowVerse?</h2>
+
+        <p>
+            BowVerse is a growing collection of browser-powered projects built
+            around customization, creativity, automation, and experimental web systems.
+        </p>
+
+        <p>
+            Instead of being one single app, BowVerse is an ecosystem where multiple
+            Bow projects can connect together over time.
+        </p>
+
+        <p>
+            The goal is to create useful, fun, and expandable tools for creators,
+            gamers, home users, developers, and anyone who likes customizing their web experience.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card system-card">
+            <h3>Bows MiniNet</h3>
+
+            <p>
+                MiniNet is a browser-based custom domain routing system.
+                It allows supported MiniNet domains to route to pages,
+                tools, dashboards, local servers, and custom web experiences.
+            </p>
+
+            <ul>
+                <li>Custom MiniNet domains</li>
+                <li>Local browser routes</li>
+                <li>Expired domain handling</li>
+                <li>Official, rented, permanent, and temporary domain support</li>
+                <li>Home server and local network shortcuts</li>
+            </ul>
+
+            <span class="status">Active Project</span>
+        </div>
+
+        <div class="card system-card">
+            <h3>Bow Magic Scripts</h3>
+
+            <p>
+                Magic Scripts is a modular browser enhancement system for custom scripts,
+                site tools, dashboards, and web enhancements.
+            </p>
+
+            <ul>
+                <li>Script manager dashboard</li>
+                <li>Enable and disable tools</li>
+                <li>GitHub-powered updates</li>
+                <li>Site-specific addons</li>
+                <li>Custom browser features</li>
+            </ul>
+
+            <span class="status">Active Project</span>
+        </div>
+
+        <div class="card system-card">
+            <h3>Bow Sites</h3>
+
+            <p>
+                Bow Sites are lightweight pages, portals, tools, and documentation pages
+                used by BowVerse projects.
+            </p>
+
+            <ul>
+                <li>Project information pages</li>
+                <li>MiniNet pages</li>
+                <li>Script documentation</li>
+                <li>Experimental portals</li>
+                <li>Hosted HTML tools</li>
+            </ul>
+
+            <span class="status">Growing System</span>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>What BowVerse Can Be Used For</h2>
+
+        <div class="grid">
+            <div>
+                <h3>Creators</h3>
+                <p>
+                    Creator hubs, link pages, project portals, update pages,
+                    download pages, and custom fan/community spaces.
+                </p>
+            </div>
+
+            <div>
+                <h3>Gamers & Streamers</h3>
+                <p>
+                    Game server shortcuts, streamer pages, mod portals,
+                    community dashboards, and quick access tools.
+                </p>
+            </div>
+
+            <div>
+                <h3>Home Servers</h3>
+                <p>
+                    Simple shortcuts for NAS dashboards, router pages,
+                    local servers, media systems, and localhost apps.
+                </p>
+            </div>
+
+            <div>
+                <h3>Developers</h3>
+                <p>
+                    Experimental tools, local test routes, project dashboards,
+                    script systems, and browser-based utilities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card future">
+        <h2>Future BowVerse Ideas</h2>
+
+        <p>
+            BowVerse is still early and may grow over time with new systems,
+            tools, dashboards, and experimental features.
+        </p>
+
+        <ul>
+            <li>More MiniNet tools</li>
+            <li>More Magic Scripts modules</li>
+            <li>Public reserved MiniNet domains</li>
+            <li>Creator dashboards</li>
+            <li>Game and streamer portals</li>
+            <li>Local network tools</li>
+            <li>Better documentation pages</li>
+            <li>Optional fundraising support</li>
+        </ul>
+    </div>
+
+    <div class="card warning">
+        <h2>Important Notice</h2>
+
+        <p>
+            BowVerse is an experimental hobby project and is under active development.
+            Some systems may change, break, improve, or be redesigned over time.
+        </p>
+
+        <p>
+            MiniNet domains are not normal public internet domains and may require
+            the Bows MiniNet plugin to work correctly.
+        </p>
+
+        <p>
+            Magic Scripts and MiniNet systems are designed with user safety in mind.
+            Public script marketplaces and public user-submitted scripts are not planned
+            due to security risks.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Support BowVerse</h2>
+
+        <p>
+            BowVerse is being built as a creative hobby project.
+            Support may help with development time, web store fees,
+            hosting costs, design improvements, documentation, and future tools.
+        </p>
+
+        <p>
+            The goal is to keep building fun, useful, and experimental browser-powered systems
+            while keeping things transparent and user-focused.
+        </p>
+
+        <div class="button-row">
+            <a class="button" href="#">Support BowVerse</a>
+            <a class="button secondary" href="#">View Projects</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    BowVerse © 2026<br>
+    Designed and deployed by Bow
+</div>
+
+</body>
+</html>
