@@ -1,5 +1,13 @@
 {
-  "youtube.stats": "https://potterservice.github.io/magic-scripts/Bow-Sites/youtube-stats/",
-  "tools.bow": "https://potterservice.github.io/magic-scripts/Bow-Sites/tools-bow/",
-  "cards.personal": "https://potterservice.github.io/magic-scripts/Bow-Sites/cards-personal/"
+  "youtube.stats": {
+    "url": "https://potterservice.github.io/magic-scripts/Bow-Sites/youtube-stats/",
+    "type": "official",
+    "created": "2026-05-17"
+  },
+
+  "tools.bow": {
+    "url": "https://potterservice.github.io/magic-scripts/Bow-Sites/tools-bow/",
+    "type": "official",
+    "created": "2026-05-17"
+  }
 }
