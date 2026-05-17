@@ -1,9 +1,9 @@
 {
-  "coolsite.bow": {
+  "rent.bow": {
     "url": "https://example.com",
     "type": "rented",
-    "rentedDate": "2026-05-17",
-    "expires": "2026-06-17"
+    "rentedDate": "2025-05-17",
+    "expires": "2025-06-17"
   },
 
   "gaming.portal": {
