@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MiniNet Domain Vendor</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+:root{
+    --card:rgba(255,255,255,0.08);
+    --green:#00ff66;
+    --blue:#38bdf8;
+    --purple:#8b5cf6;
+    --yellow:#facc15;
+    --red:#ff5c5c;
+    --muted:#aab3d1;
+    --border:rgba(255,255,255,0.12);
+}
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(139,92,246,0.22), transparent 35%),
+        linear-gradient(135deg,#050505,#101828,#1e1b4b);
+    color:white;
+    min-height:100vh;
+}
+
+.header{
+    text-align:center;
+    padding:48px 20px;
+    background:rgba(0,0,0,0.42);
+    border-bottom:1px solid var(--border);
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    margin:0 auto 18px;
+    border-radius:26px;
+    background:linear-gradient(135deg,var(--green),var(--blue),var(--purple));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:42px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.45);
+}
+
+h1{
+    margin:0;
+    color:var(--green);
+    font-size:42px;
+}
+
+.header p{
+    max-width:850px;
+    margin:14px auto 0;
+    color:var(--muted);
+    line-height:1.7;
+    font-size:17px;
+}
+
+.page{
+    max-width:1180px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.card{
+    background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.28));
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.45);
+    margin-bottom:24px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:22px;
+}
+
+h2{
+    margin-top:0;
+    color:var(--green);
+    font-size:28px;
+}
+
+h3{
+    margin-top:0;
+    color:#bae6fd;
+    font-size:23px;
+}
+
+p{
+    color:#c7cce0;
+    line-height:1.75;
+}
+
+ul{
+    color:#c7cce0;
+    line-height:1.9;
+    padding-left:22px;
+}
+
+.price{
+    font-size:38px;
+    font-weight:bold;
+    color:var(--green);
+    margin:16px 0;
+}
+
+.price small{
+    font-size:15px;
+    color:var(--muted);
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 13px;
+    border-radius:999px;
+    background:rgba(0,255,102,0.12);
+    border:1px solid rgba(0,255,102,0.35);
+    color:#a7f3d0;
+    font-size:13px;
+    font-weight:bold;
+    margin:4px;
+}
+
+.notice{
+    border-left:4px solid var(--yellow);
+}
+
+.notice h2{
+    color:#fde68a;
+}
+
+.warning{
+    border-left:4px solid var(--red);
+}
+
+.warning h2{
+    color:#ffb4b4;
+}
+
+.example{
+    margin-top:16px;
+    padding:15px;
+    border-radius:16px;
+    background:rgba(0,0,0,0.35);
+    border:1px solid rgba(255,255,255,0.08);
+    color:#aab3d1;
+    line-height:1.7;
+    overflow-wrap:anywhere;
+}
+
+.button{
+    display:inline-block;
+    margin-top:18px;
+    padding:15px 22px;
+    border-radius:16px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#050505;
+    background:linear-gradient(135deg,var(--green),#22c55e);
+}
+
+.button.secondary{
+    color:white;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+}
+
+.footer{
+    text-align:center;
+    color:#777;
+    font-size:12px;
+    margin:40px 0 30px;
+}
+
+@media(max-width:700px){
+    h1{
+        font-size:32px;
+    }
+
+    .card{
+        padding:24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">🌐</div>
+
+    <h1>MiniNet Domain Vendor</h1>
+
+    <p>
+        MiniNet domains are custom browser-based domains designed for use with
+        the Bows MiniNet plugin. Users can rent domains, purchase permanent
+        MiniNet domains, or request Bow-hosted single-page sites.
+    </p>
+
+    <div>
+        <span class="badge">MiniNet Domains</span>
+        <span class="badge">Rentals</span>
+        <span class="badge">Permanent Domains</span>
+        <span class="badge">Bow Hosted Sites</span>
+    </div>
+</div>
+
+<div class="page">
+
+    <div class="card notice">
+        <h2>Development Notice</h2>
+
+        <p>
+            Domain rentals and purchases are currently on hold while MiniNet is still
+            being developed and tested.
+        </p>
+
+        <p>
+            Pricing listed on this page is planned pricing and may change before
+            public ordering becomes available.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Permanent MiniNet Domain</h3>
+
+            <div class="price">
+                $35 <small>one-time</small>
+            </div>
+
+            <p>
+                A permanent MiniNet domain is a one-time purchase for a custom
+                MiniNet domain that does not expire.
+            </p>
+
+            <ul>
+                <li>One-time domain cost</li>
+                <li>Does not expire</li>
+                <li>Includes first forwarding URL setup at no extra cost</li>
+                <li>$5 per forwarding URL change after setup</li>
+                <li>Requires Bows MiniNet plugin to access through the browser</li>
+            </ul>
+
+            <div class="example">
+                Example:<br>
+                <strong>unicorns.rocks</strong><br>
+                <strong>creator.portal</strong><br>
+                <strong>mybrand.bow</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Rented MiniNet Domain</h3>
+
+            <div class="price">
+                $5 <small>per year</small>
+            </div>
+
+            <p>
+                A rented MiniNet domain is a lower-cost option for temporary,
+                personal, trial, project, or community use.
+            </p>
+
+            <ul>
+                <li>Starts at $5 per year</li>
+                <li>Can expire if not renewed</li>
+                <li>Good for testing or short-term projects</li>
+                <li>Can forward to a supported URL</li>
+                <li>Expired domains may route to an expired domain page</li>
+            </ul>
+
+            <div class="example">
+                Example:<br>
+                <strong>test.rent</strong><br>
+                <strong>demo.portal</strong><br>
+                <strong>server.home</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Bow Hosted Single Page Site</h3>
+
+            <div class="price">
+                $60 <small>one-time</small>
+            </div>
+
+            <p>
+                Bow hosted sites are single-page HTML sites hosted on Bow’s side.
+                This is for users who want a simple MiniNet page without building
+                the HTML themselves.
+            </p>
+
+            <ul>
+                <li>Single HTML page hosted by Bow</li>
+                <li>One-time setup cost</li>
+                <li>Includes basic page creation and hosting setup</li>
+                <li>$20 per file change after setup</li>
+                <li>Can be connected to a MiniNet domain</li>
+            </ul>
+
+            <div class="example">
+                Example uses:<br>
+                Creator page<br>
+                Streamer landing page<br>
+                Small business info page<br>
+                Project or community portal
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>Forwarding URL Changes</h2>
+
+        <p>
+            Permanent MiniNet domains include the first forwarding URL setup at
+            no additional cost.
+        </p>
+
+        <p>
+            After the first setup, forwarding URL changes are planned to cost:
+        </p>
+
+        <div class="price">
+            $5 <small>per forwarding change</small>
+        </div>
+
+        <p>
+            This helps cover manual updates, verification, and maintenance.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Bow Hosted Site File Changes</h2>
+
+        <p>
+            Bow hosted single-page sites include the original page setup.
+            After setup, requested file changes are planned to cost:
+        </p>
+
+        <div class="price">
+            $20 <small>per file change</small>
+        </div>
+
+        <p>
+            This may include text updates, layout changes, link changes,
+            image swaps, or other edits to the hosted HTML page.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>How MiniNet Domains Work</h2>
+
+        <p>
+            MiniNet domains are not normal public internet domains. They are custom
+            browser-based domains that work through the Bows MiniNet plugin.
+        </p>
+
+        <p>
+            When a supported MiniNet domain is entered into the browser, the plugin
+            checks the MiniNet domain database and routes the domain to its assigned
+            forwarding URL or Bow-hosted page.
+        </p>
+
+        <div class="example">
+            Example:<br><br>
+            <strong>unicorns.rocks</strong><br>
+            routes to a MiniNet page or forwarding URL configured in the MiniNet database.
+        </div>
+    </div>
+
+    <div class="card warning">
+        <h2>Important Notice</h2>
+
+        <p>
+            MiniNet domains purchased or rented through Bow MiniNet are only accessible
+            when the Bows MiniNet plugin is installed and enabled in the browser.
+        </p>
+
+        <p>
+            MiniNet domains are not ICANN public domains and do not replace normal
+            public internet domain names.
+        </p>
+
+        <p>
+            Some domains may be reserved for public use, system use, security reasons,
+            or future MiniNet services.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Availability Checks</h2>
+
+        <p>
+            Domain availability can be checked through the Bows MiniNet plugin dashboard.
+            The dashboard can check official, rented, permanent, temporary, and reserved
+            MiniNet domain records.
+        </p>
+
+        <p>
+            If a domain is already taken, expired, reserved, or unavailable,
+            the dashboard will show the domain status.
+        </p>
+    </div>
+
+</div>
+
+<div class="footer">
+    Designed and deployed by Bow<br>
+    Powered by Bow MiniNet routing and experimental web systems.
+</div>
+
+</body>
+</html>
