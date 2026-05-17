@@ -1,0 +1,15 @@
+{
+  "trial.bow": {
+    "url": "https://example.com",
+    "type": "temporary",
+    "startDate": "2026-05-17",
+    "expires": "2026-06-17"
+  },
+
+  "demo.portal": {
+    "url": "https://demo.example.com",
+    "type": "temporary",
+    "startDate": "2026-05-17",
+    "expires": "2026-05-31"
+  }
+}
