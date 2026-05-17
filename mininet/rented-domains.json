@@ -1,0 +1,13 @@
+{
+  "coolsite.bow": {
+    "url": "https://example.com",
+    "type": "rented",
+    "rentedDate": "2026-05-17"
+  },
+
+  "gaming.portal": {
+    "url": "https://gaming.example.com",
+    "type": "rented",
+    "rentedDate": "2026-05-17"
+  }
+}
