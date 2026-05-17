@@ -3,282 +3,630 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bow Service Self Hosted Sites</title>
+
+<title>Bow MiniNet</title>
 
 <style>
-* {
-    box-sizing: border-box;
+
+*{
+    box-sizing:border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #050505, #101828, #1e1b4b);
-    color: white;
-    min-height: 100vh;
+:root{
+    --bg:#050814;
+    --card:rgba(255,255,255,0.08);
+    --text:#ffffff;
+    --muted:#aab3d1;
+    --green:#00ff66;
+    --blue:#38bdf8;
+    --purple:#8b5cf6;
+    --red:#ff5c5c;
+    --border:rgba(255,255,255,0.12);
 }
 
-.header {
-    padding: 24px;
-    text-align: center;
-    background: rgba(0,0,0,0.45);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+
+    background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(139,92,246,0.22), transparent 35%),
+        linear-gradient(135deg,#050505,#101828,#1e1b4b);
+
+    color:var(--text);
+    min-height:100vh;
 }
 
-.header h1 {
-    margin: 0;
-    color: #00ff66;
-    font-size: 30px;
+.header{
+    padding:34px 20px;
+    text-align:center;
+    background:rgba(0,0,0,0.42);
+    border-bottom:1px solid var(--border);
 }
 
-.header p {
-    margin-top: 8px;
-    color: #aaa;
+.logo{
+    width:82px;
+    height:82px;
+    margin:0 auto 16px;
+    border-radius:24px;
+
+    background:
+        linear-gradient(135deg,var(--green),var(--blue),var(--purple));
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:38px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.45);
 }
 
-.page {
-    max-width: 1100px;
-    margin: 70px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1.4fr 0.9fr;
-    gap: 28px;
+.header h1{
+    margin:0;
+    color:var(--green);
+    font-size:38px;
 }
 
-.card {
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 22px;
-    padding: 34px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+.header p{
+    margin:10px auto 0;
+    color:var(--muted);
+    max-width:760px;
+    line-height:1.6;
 }
 
-.main-card h2 {
-    margin-top: 0;
-    font-size: 32px;
+.page{
+    max-width:1180px;
+    margin:55px auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:1.4fr 0.9fr;
+    gap:28px;
 }
 
-.main-card p {
-    color: #bbb;
-    line-height: 1.6;
+.card{
+    background:
+        linear-gradient(180deg,var(--card),rgba(0,0,0,0.28));
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:32px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.45);
 }
 
-input {
-    width: 100%;
-    margin-top: 22px;
-    padding: 18px;
-    border-radius: 14px;
-    border: 1px solid #00ff66;
-    background: #050505;
-    color: #00ff66;
-    font-size: 22px;
-    text-align: center;
-    outline: none;
+.main-card h2{
+    margin-top:0;
+    font-size:34px;
 }
 
-input::placeholder {
-    color: #557c66;
+.main-card p,
+.info-card p,
+.status-card p{
+    color:#c7cce0;
+    line-height:1.7;
 }
 
-button {
-    width: 100%;
-    margin-top: 18px;
-    padding: 16px;
-    border-radius: 14px;
-    border: none;
-    background: #00ff66;
-    color: #050505;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+.badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:18px 0;
 }
 
-button:hover {
-    background: #22c55e;
+.badge{
+    padding:7px 12px;
+    border-radius:999px;
+
+    background:rgba(0,255,102,0.12);
+
+    border:1px solid rgba(0,255,102,0.35);
+
+    color:#a7f3d0;
+
+    font-size:13px;
+    font-weight:bold;
 }
 
-.error {
-    margin-top: 16px;
-    color: #ff9f9f;
-    font-weight: bold;
+input{
+    width:100%;
+
+    margin-top:22px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    border:1px solid var(--green);
+
+    background:#050505;
+
+    color:var(--green);
+
+    font-size:22px;
+
+    text-align:center;
+
+    outline:none;
+
+    box-shadow:
+        inset 0 0 18px rgba(0,255,102,0.08);
 }
 
-.disclaimer h3 {
-    margin-top: 0;
-    color: #00ff66;
+input::placeholder{
+    color:#557c66;
 }
 
-.disclaimer p {
-    color: #cfcfcf;
-    line-height: 1.6;
-    font-size: 15px;
+button{
+    width:100%;
+
+    margin-top:18px;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    border:none;
+
+    background:
+        linear-gradient(135deg,var(--green),#22c55e);
+
+    color:#050505;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.2s;
 }
 
-.example {
-    margin-top: 18px;
-    padding: 14px;
-    background: rgba(0,0,0,0.35);
-    border-radius: 14px;
-    color: #aaa;
-    font-size: 14px;
+button:hover{
+    transform:translateY(-2px);
+    opacity:0.92;
 }
 
-.loading {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.94);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 999999;
+.error{
+    margin-top:16px;
+    color:#ff9f9f;
+    font-weight:bold;
 }
 
-.spinner {
-    width: 90px;
-    height: 90px;
-    border: 6px solid rgba(255,255,255,0.2);
-    border-top: 6px solid #00ff66;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin-bottom: 24px;
+.example{
+    margin-top:18px;
+
+    padding:14px;
+
+    background:rgba(0,0,0,0.35);
+
+    border-radius:14px;
+
+    color:#aaa;
+
+    font-size:14px;
+
+    line-height:1.7;
 }
 
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+.status-card h3,
+.info-card h3{
+    margin-top:0;
+    color:var(--green);
+    font-size:23px;
 }
 
-.footer {
-    text-align: center;
-    color: #777;
-    font-size: 12px;
-    margin-top: 40px;
+.status-box{
+    margin-top:18px;
+    display:grid;
+    gap:12px;
 }
 
-@media (max-width: 800px) {
-    .page {
-        grid-template-columns: 1fr;
-        margin-top: 30px;
+.status-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+
+    padding:13px 14px;
+
+    border-radius:14px;
+
+    background:rgba(0,0,0,0.35);
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.status-name{
+    color:#dbeafe;
+    font-weight:bold;
+}
+
+.status-active{
+    color:var(--green);
+    font-weight:bold;
+}
+
+.status-dot{
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--green);
+
+    display:inline-block;
+
+    margin-right:6px;
+
+    box-shadow:0 0 12px var(--green);
+}
+
+.side-stack{
+    display:grid;
+    gap:22px;
+}
+
+.warning{
+    border-left:4px solid var(--red);
+}
+
+.warning h3{
+    color:#ffb4b4;
+}
+
+.addon-box{
+    border-left:4px solid var(--blue);
+}
+
+.addon-status{
+    margin-top:14px;
+
+    padding:13px 14px;
+
+    border-radius:14px;
+
+    background:rgba(56,189,248,0.12);
+
+    border:1px solid rgba(56,189,248,0.35);
+
+    color:#bae6fd;
+
+    font-weight:bold;
+
+    text-align:center;
+}
+
+.loading{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,0.94);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    z-index:999999;
+
+    text-align:center;
+}
+
+.spinner{
+    width:90px;
+    height:90px;
+
+    border:6px solid rgba(255,255,255,0.2);
+    border-top:6px solid var(--green);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin-bottom:24px;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
     }
 }
+
+.footer{
+    text-align:center;
+    color:#777;
+    font-size:12px;
+    margin:40px 0 30px;
+}
+
+@media(max-width:850px){
+
+    .page{
+        grid-template-columns:1fr;
+        margin-top:30px;
+    }
+
+    .header h1{
+        font-size:30px;
+    }
+
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="header">
-    <h1>Bow Service Self Hosted Sites</h1>
-    <p>Private launcher for Bow-hosted custom websites</p>
+
+    <div class="logo">
+        🌐
+    </div>
+
+    <h1>Bow MiniNet</h1>
+
+    <p>
+        A mini internet within the internet powered by Bow Domains,
+        custom pages, MiniNet routing, and experimental web systems.
+    </p>
+
 </div>
 
 <div class="page">
 
     <div class="card main-card">
-        <h2>Enter Bow Domain</h2>
+
+        <h2>Enter MiniNet Domain</h2>
 
         <p>
-            Type a Bow hosted address below to open a saved site from the Bow Service GitHub system.
+            Bow MiniNet lets you open custom Bow-style web addresses through the
+            Bow browser system. It is designed to feel like a small internet
+            inside the internet made for custom pages, tools, and experiences.
         </p>
 
-        <input id="domainInput" placeholder="example: test.bow" autofocus>
+        <div class="badges">
 
-        <button id="openBtn">Open Bow Site</button>
+            <span class="badge">MiniNet Active</span>
+
+            <span class="badge">Bow Domains Active</span>
+
+            <span class="badge">Custom Routing</span>
+
+            <span class="badge">Experimental Web</span>
+
+        </div>
+
+        <input
+            id="domainInput"
+            placeholder="example: portal.bow"
+            autofocus>
+
+        <button id="openBtn">
+            Open MiniNet Site
+        </button>
 
         <div id="error" class="error"></div>
 
         <div class="example">
-            Example: <strong>test.bow</strong> opens folder <strong>Bow-Sites/test-bow/</strong>
+
+            Example MiniNet Domains:<br>
+
+            <strong>portal.bow</strong><br>
+
+            <strong>cards.personal</strong><br>
+
+            <strong>tools.bow</strong>
+
         </div>
+
     </div>
 
-    <div class="card disclaimer">
-        <h3>Disclaimer</h3>
+    <div class="side-stack">
 
-        <p>
-            This address bar is only used for Bow hosted sites.
-        </p>
+        <div class="card status-card">
 
-        <p>
-            It does not access outside domains, public websites, or normal internet addresses.
-        </p>
+            <h3>MiniNet Status</h3>
 
-        <p>
-            Bow domains are converted into folder names inside the Bow-Sites GitHub directory.
-        </p>
+            <p>
+                Current MiniNet service and routing status.
+            </p>
 
-        <div class="example">
-            test.bow → test-bow<br>
-            cards.personal → cards-personal
+            <div class="status-box">
+
+                <div class="status-row">
+
+                    <span class="status-name">
+                        MiniNet Status
+                    </span>
+
+                    <span class="status-active">
+                        <span class="status-dot"></span>
+                        Active
+                    </span>
+
+                </div>
+
+                <div class="status-row">
+
+                    <span class="status-name">
+                        Bow Domains
+                    </span>
+
+                    <span class="status-active">
+                        <span class="status-dot"></span>
+                        Active
+                    </span>
+
+                </div>
+
+                <div class="status-row">
+
+                    <span class="status-name">
+                        Routing Services
+                    </span>
+
+                    <span class="status-active">
+                        <span class="status-dot"></span>
+                        Connected
+                    </span>
+
+                </div>
+
+                <div class="status-row">
+
+                    <span class="status-name">
+                        Experimental Systems
+                    </span>
+
+                    <span class="status-active">
+                        <span class="status-dot"></span>
+                        Online
+                    </span>
+
+                </div>
+
+            </div>
+
         </div>
+
+        <div class="card info-card addon-box">
+
+            <h3>Browser Addon Database</h3>
+
+            <p>
+                Additional MiniNet database routing is planned for browser addon users.
+            </p>
+
+            <p>
+                Custom routing is only available to users with the Bow plugin
+                and MiniNet addon enabled.
+            </p>
+
+            <div class="addon-status">
+                Custom Routing: Plugin Required
+            </div>
+
+        </div>
+
+        <div class="card info-card">
+
+            <h3>What Is MiniNet?</h3>
+
+            <p>
+                Bow MiniNet is an experimental mini web system designed for
+                Bow-style domains, custom pages, tools, demos, and lightweight
+                web experiences.
+            </p>
+
+            <p>
+                It is designed to create a connected ecosystem of custom
+                experiences that feel like a small internet within the internet.
+            </p>
+
+        </div>
+
+        <div class="card info-card warning">
+
+            <h3>Important Notice</h3>
+
+            <p>
+                Bow Domains are not normal public internet domains.
+                They are custom MiniNet addresses designed to work
+                through the Bow MiniNet system.
+            </p>
+
+            <p>
+                This launcher does not browse the entire internet.
+                It only opens supported MiniNet pages and custom
+                Bow-style addresses.
+            </p>
+
+        </div>
+
     </div>
 
 </div>
 
 <div class="footer">
-    Designed and deployed by Bow
+
+    Designed and deployed by Bow<br>
+
+    Powered by Bow Domains and MiniNet routing.
+
 </div>
 
 <div id="loading" class="loading">
+
     <div class="spinner"></div>
-    <h2>The magical service of Bow is loading</h2>
-    <p>Please wait...</p>
+
+    <h2>
+        The magical service of Bow is loading
+    </h2>
+
+    <p>
+        Please wait...
+    </p>
+
 </div>
 
 <script>
-const GITHUB_USER = "PotterService";
-const REPO_NAME = "magic-scripts";
-const BOW_SITES_PATH = "Bow-Sites";
 
-function openSite() {
-    const input = document.getElementById("domainInput").value.trim();
-    const error = document.getElementById("error");
+function openSite(){
+
+    const input =
+        document.getElementById("domainInput")
+        .value
+        .trim();
+
+    const error =
+        document.getElementById("error");
 
     error.textContent = "";
 
-    if (!input) {
-        error.textContent = "Please enter a Bow domain.";
+    if(!input){
+
+        error.textContent =
+            "Please enter a MiniNet domain.";
+
         return;
     }
 
-    let clean = input
-        .toLowerCase()
-        .replace(/^https?:\/\//, "")
-        .replace(/^www\./, "")
-        .replace(/\/$/, "");
-
-    if (!clean.includes(".")) {
-        error.textContent = "Enter a full Bow domain like test.bow.";
-        return;
-    }
-
-    const folderName = clean.replace(/\./g, "-");
-
-    const finalUrl =
-        "https://" +
-        GITHUB_USER +
-        ".github.io/" +
-        REPO_NAME +
-        "/" +
-        BOW_SITES_PATH +
-        "/" +
-        folderName +
-        "/";
-
-    document.getElementById("loading").style.display = "flex";
+    document.getElementById("loading")
+        .style.display = "flex";
 
     setTimeout(() => {
-        window.location.href = finalUrl;
-    }, 1200);
+
+        window.location.href =
+            "https://potterservice.github.io/magic-scripts/Bow-Sites/" +
+            input
+                .toLowerCase()
+                .replace(/\./g,"-") +
+            "/";
+
+    },1200);
+
 }
 
-document.getElementById("openBtn").onclick = openSite;
+document.getElementById("openBtn")
+    .onclick = openSite;
 
-document.getElementById("domainInput").addEventListener("keydown", function(e) {
-    if (e.key === "Enter") {
-        openSite();
-    }
-});
+document.getElementById("domainInput")
+    .addEventListener("keydown",function(e){
+
+        if(e.key === "Enter"){
+            openSite();
+        }
+
+    });
+
 </script>
 
 </body>
