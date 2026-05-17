@@ -1,0 +1,13 @@
+{
+  "mybrand.bow": {
+    "url": "https://example.com",
+    "type": "permanent",
+    "soldDate": "2026-05-17"
+  },
+
+  "forever.portal": {
+    "url": "https://portal.example.com",
+    "type": "permanent",
+    "soldDate": "2026-05-17"
+  }
+}
