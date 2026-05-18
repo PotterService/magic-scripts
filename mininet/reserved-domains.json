@@ -1,0 +1,1953 @@
+{
+  "version": "1.0",
+  "project": "Bow's MiniNet",
+  "updated": "2026-05-17",
+  "defaultRegisteredDate": "2026-05-17",
+  "notice": "These reserved domains are for Bow's MiniNet only. Ownership and forwarding records do not represent public internet domain ownership.",
+  "domains": [
+    {
+      "domain": "google.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://google.com",
+      "category": "Search Engine",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "youtube.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://youtube.com",
+      "category": "Video Platform",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "facebook.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://facebook.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "instagram.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://instagram.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "x.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://x.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "twitter.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://twitter.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "reddit.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://reddit.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "amazon.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://amazon.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "amazonaws.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://amazonaws.com",
+      "category": "Cloud Service",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "netflix.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://netflix.com",
+      "category": "Streaming",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "discord.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://discord.com",
+      "category": "Communication",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "twitch.tv",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://twitch.tv",
+      "category": "Streaming",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "github.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://github.com",
+      "category": "Development",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "openai.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://openai.com",
+      "category": "Artificial Intelligence",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "chatgpt.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://chatgpt.com",
+      "category": "Artificial Intelligence",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "microsoft.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://microsoft.com",
+      "category": "Technology",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "apple.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://apple.com",
+      "category": "Technology",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "icloud.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://icloud.com",
+      "category": "Cloud Service",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "office.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://office.com",
+      "category": "Productivity",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "live.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://live.com",
+      "category": "Microsoft Service",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "bing.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://bing.com",
+      "category": "Search Engine",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "yahoo.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://yahoo.com",
+      "category": "Search Engine",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "duckduckgo.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://duckduckgo.com",
+      "category": "Search Engine",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "wikipedia.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://wikipedia.org",
+      "category": "Education",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "linkedin.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://linkedin.com",
+      "category": "Professional Network",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "tiktok.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://tiktok.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "snapchat.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://snapchat.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "pinterest.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://pinterest.com",
+      "category": "Social Media",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ebay.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ebay.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "paypal.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://paypal.com",
+      "category": "Finance",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "roblox.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://roblox.com",
+      "category": "Gaming",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "minecraft.net",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://minecraft.net",
+      "category": "Gaming",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "steamcommunity.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://steamcommunity.com",
+      "category": "Gaming",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "steampowered.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://steampowered.com",
+      "category": "Gaming",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "spotify.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://spotify.com",
+      "category": "Music",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "soundcloud.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://soundcloud.com",
+      "category": "Music",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "imdb.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://imdb.com",
+      "category": "Entertainment",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "cnn.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://cnn.com",
+      "category": "News",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "bbc.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://bbc.com",
+      "category": "News",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "nytimes.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://nytimes.com",
+      "category": "News",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "weather.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://weather.com",
+      "category": "Weather",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "fandom.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://fandom.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "quora.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://quora.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "stackoverflow.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://stackoverflow.com",
+      "category": "Development",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "stackexchange.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://stackexchange.com",
+      "category": "Development",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "canva.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://canva.com",
+      "category": "Design",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "dropbox.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://dropbox.com",
+      "category": "Cloud Storage",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "mega.nz",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://mega.nz",
+      "category": "Cloud Storage",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "mediafire.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://mediafire.com",
+      "category": "Cloud Storage",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "archive.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://archive.org",
+      "category": "Archive",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "craigslist.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://craigslist.org",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "etsy.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://etsy.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "walmart.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://walmart.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "target.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://target.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "bestbuy.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://bestbuy.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "homedepot.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://homedepot.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "lowes.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://lowes.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "costco.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://costco.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "aliexpress.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://aliexpress.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "temu.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://temu.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "shein.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://shein.com",
+      "category": "Shopping",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "doordash.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://doordash.com",
+      "category": "Food Delivery",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ubereats.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ubereats.com",
+      "category": "Food Delivery",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "grubhub.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://grubhub.com",
+      "category": "Food Delivery",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "uber.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://uber.com",
+      "category": "Transportation",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "lyft.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://lyft.com",
+      "category": "Transportation",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "airbnb.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://airbnb.com",
+      "category": "Travel",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "booking.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://booking.com",
+      "category": "Travel",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "expedia.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://expedia.com",
+      "category": "Travel",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "tripadvisor.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://tripadvisor.com",
+      "category": "Travel",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "zillow.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://zillow.com",
+      "category": "Real Estate",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "realtor.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://realtor.com",
+      "category": "Real Estate",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "indeed.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://indeed.com",
+      "category": "Jobs",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "glassdoor.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://glassdoor.com",
+      "category": "Jobs",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "coursera.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://coursera.org",
+      "category": "Education",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "udemy.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://udemy.com",
+      "category": "Education",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "khanacademy.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://khanacademy.org",
+      "category": "Education",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "zoom.us",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://zoom.us",
+      "category": "Communication",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "slack.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://slack.com",
+      "category": "Communication",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "notion.so",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://notion.so",
+      "category": "Productivity",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "trello.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://trello.com",
+      "category": "Productivity",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "figma.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://figma.com",
+      "category": "Design",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "adobe.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://adobe.com",
+      "category": "Design",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "behance.net",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://behance.net",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "deviantart.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://deviantart.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "tumblr.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://tumblr.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "wordpress.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://wordpress.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "wix.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://wix.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "shopify.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://shopify.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "godaddy.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://godaddy.com",
+      "category": "Domain Registrar",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "namecheap.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://namecheap.com",
+      "category": "Domain Registrar",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "cloudflare.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://cloudflare.com",
+      "category": "Internet Infrastructure",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "digitalocean.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://digitalocean.com",
+      "category": "Cloud Service",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "oracle.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://oracle.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ibm.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ibm.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "intel.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://intel.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "amd.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://amd.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "nvidia.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://nvidia.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "hp.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://hp.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "dell.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://dell.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "lenovo.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://lenovo.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "asus.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://asus.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "acer.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://acer.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "samsung.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://samsung.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "sony.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://sony.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "nintendo.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://nintendo.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "playstation.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://playstation.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "xbox.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://xbox.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "epicgames.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://epicgames.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ea.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ea.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "riotgames.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://riotgames.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "blizzard.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://blizzard.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "rockstargames.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://rockstargames.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ubisoft.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ubisoft.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "activision.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://activision.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "pokemon.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://pokemon.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "marvel.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://marvel.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "disney.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://disney.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "hulu.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://hulu.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "max.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://max.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "paramountplus.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://paramountplus.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "peacocktv.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://peacocktv.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "primevideo.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://primevideo.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "crunchyroll.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://crunchyroll.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "aniwave.to",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://aniwave.to",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "kick.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://kick.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "rumble.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://rumble.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "odysee.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://odysee.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "patreon.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://patreon.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ko-fi.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ko-fi.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "buymeacoffee.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://buymeacoffee.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "gumroad.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://gumroad.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "substack.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://substack.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "medium.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://medium.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "gitlab.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://gitlab.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "bitbucket.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://bitbucket.org",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "replit.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://replit.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "codepen.io",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://codepen.io",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "jsfiddle.net",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://jsfiddle.net",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "codesandbox.io",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://codesandbox.io",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "vercel.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://vercel.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "netlify.app",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://netlify.app",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "render.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://render.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "railway.app",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://railway.app",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "firebase.google.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://firebase.google.com",
+      "category": "Development",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "supabase.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://supabase.com",
+      "category": "Development",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "mongodb.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://mongodb.com",
+      "category": "Database",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "mysql.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://mysql.com",
+      "category": "Database",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "sqlite.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://sqlite.org",
+      "category": "Database",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "postgresql.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://postgresql.org",
+      "category": "Database",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "docker.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://docker.com",
+      "category": "Development",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "kubernetes.io",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://kubernetes.io",
+      "category": "Development",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "linux.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://linux.org",
+      "category": "Operating System",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ubuntu.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ubuntu.com",
+      "category": "Operating System",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "archlinux.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://archlinux.org",
+      "category": "Operating System",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "mozilla.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://mozilla.org",
+      "category": "Browser",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "chrome.google.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://chrome.google.com",
+      "category": "Browser",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "opera.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://opera.com",
+      "category": "Browser",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "brave.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://brave.com",
+      "category": "Browser",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "vivaldi.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://vivaldi.com",
+      "category": "Browser",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "torproject.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://torproject.org",
+      "category": "Privacy",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "proton.me",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://proton.me",
+      "category": "Privacy",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "protonmail.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://protonmail.com",
+      "category": "Email",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "telegram.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://telegram.org",
+      "category": "Communication",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "whatsapp.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://whatsapp.com",
+      "category": "Communication",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "messenger.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://messenger.com",
+      "category": "Communication",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "signal.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://signal.org",
+      "category": "Communication",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "wechat.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://wechat.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "line.me",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://line.me",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "vk.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://vk.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ok.ru",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ok.ru",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "baidu.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://baidu.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "qq.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://qq.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "taobao.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://taobao.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "tmall.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://tmall.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "jd.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://jd.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "weibo.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://weibo.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "yandex.ru",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://yandex.ru",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "mail.ru",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://mail.ru",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "naver.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://naver.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "daum.net",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://daum.net",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "rakuten.co.jp",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://rakuten.co.jp",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "nicovideo.jp",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://nicovideo.jp",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "pixiv.net",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://pixiv.net",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "fanbox.cc",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://fanbox.cc",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "pornhub.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://pornhub.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "xvideos.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://xvideos.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "xnxx.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://xnxx.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "rule34.xxx",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://rule34.xxx",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "e621.net",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://e621.net",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "4chan.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://4chan.org",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "8kun.top",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://8kun.top",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "pastebin.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://pastebin.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "hastebin.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://hastebin.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "speedtest.net",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://speedtest.net",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "fast.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://fast.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "whatismyipaddress.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://whatismyipaddress.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "ipinfo.io",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://ipinfo.io",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "who.is",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://who.is",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "icann.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://icann.org",
+      "category": "Internet Governance",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "iana.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://iana.org",
+      "category": "Internet Governance",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "archive.today",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://archive.today",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "waybackmachine.org",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://waybackmachine.org",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "wikihow.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://wikihow.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "healthline.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://healthline.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "webmd.com",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://webmd.com",
+      "category": "Popular Domain",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "nih.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://nih.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "cdc.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://cdc.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "irs.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://irs.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "usa.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://usa.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "whitehouse.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://whitehouse.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "nasa.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://nasa.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "fbi.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://fbi.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "cia.gov",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://cia.gov",
+      "category": "Government",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "github.io",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://github.io",
+      "category": "Development Hosting",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    },
+    {
+      "domain": "pages.dev",
+      "reserved": true,
+      "registered": "2026-05-17",
+      "forwarding": true,
+      "defaultUrl": "https://pages.dev",
+      "category": "Development Hosting",
+      "reason": "Reserved inside Bow's MiniNet to prevent impersonation and allow default forwarding."
+    }
+  ]
+}
