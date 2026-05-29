@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bow Grade Vault Registry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <div class="brand-mark">BGV</div>
+        <div>
+          <strong>Bow Grade Vault</strong>
+          <span>Public Card Registry</span>
+        </div>
+      </div>
+      <a class="nav-pill" href="#about">About grading</a>
+    </nav>
+
+    <section class="hero-inner">
+      <div>
+        <p class="eyebrow">Personal card grading registry</p>
+        <h1>Search verified cards in the Bow Grade Vault.</h1>
+        <p class="hero-text">Look up public card records, grades, acquisition details, authenticity notes, Bow slab information, and ownership history when shared publicly.</p>
+      </div>
+      <div class="lookup-card">
+        <label for="searchInput">Card lookup</label>
+        <div class="search-row">
+          <input id="searchInput" type="search" placeholder="Search name, cert, category, owner, place..." />
+          <button id="searchBtn">Search</button>
+        </div>
+        <div class="filters">
+          <select id="categoryFilter"><option value="">All categories</option></select>
+          <select id="gradeFilter"><option value="">All grades</option></select>
+          <select id="slabFilter"><option value="">Slabbed & raw</option><option value="slabbed">Slabbed</option><option value="raw">Raw card</option></select>
+        </div>
+        <p id="registryStatus" class="status">Loading registry...</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="stats-grid" id="statsGrid">
+      <article><strong id="statTotal">0</strong><span>Public Cards</span></article>
+      <article><strong id="statSlabbed">0</strong><span>Bow Slabbed</span></article>
+      <article><strong id="statVerified">0</strong><span>Verified Authentic</span></article>
+      <article><strong id="statCategories">0</strong><span>Categories</span></article>
+    </section>
+
+    <section class="registry-shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Registry results</p>
+          <h2>Cards</h2>
+        </div>
+        <p class="muted">Cards are hidden until you search or use filters. Click a card to view the full public record.</p>
+      </div>
+      <div id="emptyState" class="empty-state">
+        <h3>Start with a search</h3>
+        <p>Use the lookup box above to search by card name, category, cert number, acquisition place, current owner, or authenticity details.</p>
+        <button id="showAllBtn">Show all public cards</button>
+      </div>
+      <div id="cardsGrid" class="cards-grid hidden"></div>
+    </section>
+
+    <section id="about" class="about-panel">
+      <p class="eyebrow">About this registry</p>
+      <h2>What Bow grading means</h2>
+      <p>Bow Grade Vault is a personal grading and tracking system. Grades, authenticity status, ownership history, and slab details are recorded by the collector/admin and are not the same as third-party grading from PSA, Beckett, CGC, or other companies.</p>
+      <div class="about-grid">
+        <div><strong>Grade</strong><span>Overall condition score based on centering, corners, edges, and surface.</span></div>
+        <div><strong>Authenticity</strong><span>Shows the admin’s authenticity status and verification notes, if provided.</span></div>
+        <div><strong>Bow Slab</strong><span>If slabbed, the card was slabbed by Bow Grade Vault with a Bow cert number.</span></div>
+        <div><strong>Ownership</strong><span>Current owner and transfer history may appear when the admin chooses to make it public.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="cardModal" class="modal">
+    <div class="modal-frame">
+      <button id="closeModal" class="close-btn">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <footer>
+    <strong>Bow Grade Vault</strong>
+    <span>Public registry powered by public-cards.json</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
