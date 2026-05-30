@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bow Creator Vault | Custom Card Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <div>
+          <h1>Bow Creator Vault</h1>
+          <p>Original and custom card archive by Bow</p>
+        </div>
+      </div>
+      <a class="nav-btn" href="#vault">Search Vault</a>
+    </nav>
+
+    <section class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Creator Registry</span>
+        <h2>Cards designed, created, and archived by Bow.</h2>
+        <p>
+          Bow Creator Vault is a public showcase for custom cards, prototypes, sets,
+          print runs, lore, release details, and creator notes.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#vault">Explore Cards</a>
+          <a class="secondary-btn" href="#about">About the Vault</a>
+        </div>
+      </div>
+      <div class="feature-card" id="featuredCard">
+        <div class="feature-image placeholder">BCV</div>
+        <div class="feature-content">
+          <p class="mini-label">Featured Card</p>
+          <h3>Loading featured card...</h3>
+          <p>Card information will appear here.</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="stats-strip" id="statsStrip">
+      <div><strong id="totalCards">0</strong><span>Total Cards</span></div>
+      <div><strong id="totalSets">0</strong><span>Sets</span></div>
+      <div><strong id="publicCards">0</strong><span>Public Entries</span></div>
+      <div><strong id="printedCards">0</strong><span>Printed/Released</span></div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <span class="eyebrow">What this is</span>
+        <h2>A creator archive, not a grading company.</h2>
+      </div>
+      <p>
+        This registry is for cards created by Bow. Entries may include fantasy cards,
+        family cards, prototype TCG cards, promo cards, original sets, and fan-style
+        personal projects. Public information is shown for browsing, collecting,
+        creator history, and display purposes.
+      </p>
+    </section>
+
+    <section class="vault" id="vault">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Vault Search</span>
+          <h2>Find a created card</h2>
+        </div>
+        <button id="clearFilters" class="ghost-btn">Clear</button>
+      </div>
+
+      <div class="filters">
+        <input id="searchInput" type="search" placeholder="Search card name, set, character, lore, keyword..." />
+        <select id="setFilter"><option value="">All Sets</option></select>
+        <select id="typeFilter"><option value="">All Types</option></select>
+        <select id="rarityFilter"><option value="">All Rarities</option></select>
+        <select id="statusFilter"><option value="">All Statuses</option></select>
+      </div>
+
+      <div class="cards-grid" id="cardsGrid"></div>
+      <p class="empty" id="emptyState" hidden>No matching public cards found.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Bow Creator Vault. Created by Bow.</p>
+    <p class="fine-print">Custom cards shown here may be original, personal, prototype, parody, fan-style, or inspired creations. Ownership and trademark rights remain with their respective holders where applicable.</p>
+  </footer>
+
+  <dialog id="cardDialog" class="card-dialog">
+    <button class="close-btn" id="closeDialog">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
