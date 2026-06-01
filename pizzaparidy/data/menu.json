@@ -1,0 +1,394 @@
+{
+  "pizzas": [
+    {
+      "id": "pepperoni-panic",
+      "name": "Pepperoni Panic",
+      "desc": "Classic pepperoni, extra cheese, and just enough panic to keep it crispy.",
+      "price": 9.99,
+      "emoji": "\ud83c\udf55",
+      "points": 10
+    },
+    {
+      "id": "cheese-overlord",
+      "name": "Cheese Overlord",
+      "desc": "A totally unnecessary amount of cheese. The cheese is in charge now.",
+      "price": 10.99,
+      "emoji": "\ud83e\uddc0",
+      "points": 11
+    },
+    {
+      "id": "bigfoot-bbq",
+      "name": "Bigfoot BBQ Stomp",
+      "desc": "BBQ chicken, onions, bacon, and footprints in the sauce.",
+      "price": 14.99,
+      "emoji": "\ud83e\uddb6",
+      "points": 15
+    },
+    {
+      "id": "unicorn-supreme",
+      "name": "Unicorn Supreme",
+      "desc": "Colorful veggies, magical mushrooms, rainbow vibes, zero explanations.",
+      "price": 15.99,
+      "emoji": "\ud83e\udd84",
+      "points": 16
+    },
+    {
+      "id": "dragon-breath",
+      "name": "Dragon Breath Deluxe",
+      "desc": "Jalape\u00f1os, hot sauce, fire peppers, and a waiver nobody reads.",
+      "price": 13.99,
+      "emoji": "\ud83d\udc09",
+      "points": 14
+    },
+    {
+      "id": "area-51",
+      "name": "Area 51 Special",
+      "desc": "Secret sauce, alien cheese, classified toppings, and government confusion.",
+      "price": 16.99,
+      "emoji": "\ud83d\udc7d",
+      "points": 17
+    },
+    {
+      "id": "lava-ranch",
+      "name": "Lava Ranch Meltdown",
+      "desc": "Spicy sauce with ranch drizzle. Somehow both chaos and comfort.",
+      "price": 12.99,
+      "emoji": "\ud83c\udf0b",
+      "points": 13
+    },
+    {
+      "id": "meat-mountain",
+      "name": "Meat Mountain",
+      "desc": "Pepperoni, sausage, ham, bacon, meatballs, and a protein lecture.",
+      "price": 17.99,
+      "emoji": "\u26f0\ufe0f",
+      "points": 18
+    },
+    {
+      "id": "veggie-wizard",
+      "name": "Veggie Wizard",
+      "desc": "Peppers, onions, mushrooms, olives, tomatoes, and wizard approval.",
+      "price": 12.49,
+      "emoji": "\ud83e\uddd9",
+      "points": 13
+    },
+    {
+      "id": "pineapple-court",
+      "name": "Pineapple Courtroom",
+      "desc": "Pineapple and ham on trial. The jury is still yelling.",
+      "price": 11.99,
+      "emoji": "\ud83c\udf4d",
+      "points": 12
+    },
+    {
+      "id": "midnight-snack",
+      "name": "Midnight Snack Attack",
+      "desc": "Pepperoni, sausage, bacon, extra cheese, and poor late-night judgment.",
+      "price": 15.49,
+      "emoji": "\ud83c\udf19",
+      "points": 16
+    },
+    {
+      "id": "breakfast-pizza",
+      "name": "Breakfast for Dinner Pizza",
+      "desc": "Egg, bacon, sausage, cheese, and morning confusion at 7 PM.",
+      "price": 13.49,
+      "emoji": "\ud83c\udf73",
+      "points": 14
+    },
+    {
+      "id": "taco-pizza",
+      "name": "Taco Tuesday Pizza",
+      "desc": "Taco meat, lettuce, cheese, sauce, and absolutely no rules.",
+      "price": 14.49,
+      "emoji": "\ud83c\udf2e",
+      "points": 15
+    },
+    {
+      "id": "pickle-chaos",
+      "name": "Pickle Chaos Pizza",
+      "desc": "Pickles, ranch, cheese, and the courage to be different.",
+      "price": 12.49,
+      "emoji": "\ud83e\udd52",
+      "points": 13
+    },
+    {
+      "id": "mac-cheese",
+      "name": "Mac Attack Pizza",
+      "desc": "Mac and cheese on pizza because carbs deserve friends.",
+      "price": 14.99,
+      "emoji": "\ud83c\udf5d",
+      "points": 15
+    },
+    {
+      "id": "dessert-pizza",
+      "name": "Cookie Crumble Dessert Pizza",
+      "desc": "Sweet crust, chocolate drizzle, cookie bits, and zero self-control.",
+      "price": 10.49,
+      "emoji": "\ud83c\udf6a",
+      "points": 11
+    }
+  ],
+  "sides": [
+    {
+      "id": "chaos-bread",
+      "name": "Chaos Breadsticks",
+      "desc": "Breadsticks that may attempt to escape.",
+      "price": 4.99,
+      "emoji": "\ud83e\udd56",
+      "points": 5
+    },
+    {
+      "id": "cheese-orbs",
+      "name": "Cheese Orbs",
+      "desc": "Small round cheese objects from the snack dimension.",
+      "price": 5.99,
+      "emoji": "\ud83e\uddc0",
+      "points": 6
+    },
+    {
+      "id": "garlic-clouds",
+      "name": "Garlic Clouds",
+      "desc": "Soft garlic bread puffs that smell like a good decision.",
+      "price": 5.49,
+      "emoji": "\u2601\ufe0f",
+      "points": 6
+    },
+    {
+      "id": "wizard-wings",
+      "name": "Wizard Wings",
+      "desc": "Wings coated in mysterious sauce from a tiny wizard bottle.",
+      "price": 8.99,
+      "emoji": "\ud83c\udf57",
+      "points": 9
+    },
+    {
+      "id": "sauce-squad",
+      "name": "Sauce Squad",
+      "desc": "Ranch, marinara, garlic butter, and one suspicious cup labeled mystery.",
+      "price": 2.99,
+      "emoji": "\ud83e\udd6b",
+      "points": 3
+    },
+    {
+      "id": "nacho-pizza-chips",
+      "name": "Pizza Nacho Chips",
+      "desc": "Chips with pizza seasoning and questionable confidence.",
+      "price": 4.49,
+      "emoji": "\ud83c\udf36\ufe0f",
+      "points": 5
+    }
+  ],
+  "drinks": [
+    {
+      "id": "fizz-wizard",
+      "name": "Fizz Wizard Soda",
+      "desc": "Bubbles with magical side effects.",
+      "price": 1.99,
+      "emoji": "\ud83e\udd64",
+      "points": 2
+    },
+    {
+      "id": "sweet-tea-tornado",
+      "name": "Sweet Tea Tornado",
+      "desc": "Sweet tea strong enough to power a delivery scooter.",
+      "price": 2.49,
+      "emoji": "\ud83e\uddcb",
+      "points": 3
+    },
+    {
+      "id": "lava-lemonade",
+      "name": "Lava Lemonade",
+      "desc": "Lemonade with dramatic energy.",
+      "price": 2.99,
+      "emoji": "\ud83c\udf4b",
+      "points": 3
+    },
+    {
+      "id": "moon-milkshake",
+      "name": "Moon Milkshake",
+      "desc": "Cold, creamy, and probably from space.",
+      "price": 4.99,
+      "emoji": "\ud83e\udd5b",
+      "points": 5
+    }
+  ],
+  "toppings": [
+    [
+      "pep",
+      "Pepperoni",
+      "\ud83c\udf55",
+      1.0
+    ],
+    [
+      "cheese",
+      "Extra Cheese",
+      "\ud83e\uddc0",
+      1.0
+    ],
+    [
+      "mush",
+      "Moon Mushrooms",
+      "\ud83c\udf44",
+      1.0
+    ],
+    [
+      "onion",
+      "Glow Onions",
+      "\ud83e\uddc5",
+      0.75
+    ],
+    [
+      "pepper",
+      "Bell Peppers",
+      "\ud83e\uded1",
+      0.75
+    ],
+    [
+      "bacon",
+      "Bigfoot Bacon",
+      "\ud83e\udd53",
+      1.5
+    ],
+    [
+      "pine",
+      "Quantum Pineapple",
+      "\ud83c\udf4d",
+      1.0
+    ],
+    [
+      "jal",
+      "Jalape\u00f1o Panic",
+      "\ud83c\udf36\ufe0f",
+      0.75
+    ],
+    [
+      "ranch",
+      "Ranch Spiral",
+      "\ud83e\udd0d",
+      0.5
+    ],
+    [
+      "unicorn",
+      "Unicorn Sprinkles",
+      "\ud83e\udd84",
+      2.0
+    ],
+    [
+      "alien",
+      "Alien Cheese",
+      "\ud83d\udc7d",
+      1.75
+    ],
+    [
+      "dragon",
+      "Dragon Scales",
+      "\ud83d\udc09",
+      2.0
+    ],
+    [
+      "meatball",
+      "Meteor Meatballs",
+      "\u2604\ufe0f",
+      1.5
+    ],
+    [
+      "pickle",
+      "Pickle Chips",
+      "\ud83e\udd52",
+      1.0
+    ],
+    [
+      "ham",
+      "Ham Hammer",
+      "\ud83d\udd28",
+      1.25
+    ],
+    [
+      "sausage",
+      "Sausage Storm",
+      "\ud83c\udf2a\ufe0f",
+      1.25
+    ],
+    [
+      "olive",
+      "Black Olives",
+      "\u26ab",
+      0.75
+    ],
+    [
+      "tomato",
+      "Time Travel Tomatoes",
+      "\ud83c\udf45",
+      0.75
+    ],
+    [
+      "spinach",
+      "Hero Spinach",
+      "\ud83e\udd6c",
+      0.75
+    ],
+    [
+      "hot-honey",
+      "Hot Honey Portal",
+      "\ud83c\udf6f",
+      1.0
+    ],
+    [
+      "bbq",
+      "BBQ Swirl",
+      "\ud83d\udd25",
+      0.75
+    ],
+    [
+      "mac",
+      "Mac & Cheese Blobs",
+      "\ud83e\uddc0",
+      1.75
+    ],
+    [
+      "egg",
+      "Breakfast Egg",
+      "\ud83c\udf73",
+      1.25
+    ],
+    [
+      "cookie",
+      "Cookie Crumble",
+      "\ud83c\udf6a",
+      1.5
+    ]
+  ],
+  "coupons": [
+    {
+      "code": "SENDHELP",
+      "type": "percent",
+      "value": 15,
+      "desc": "15% off because the pizza heard screaming."
+    },
+    {
+      "code": "BIGFOOT",
+      "type": "flat",
+      "value": 5,
+      "desc": "$5 off orders over $20, approved by Bigfoot."
+    },
+    {
+      "code": "CHEESEWIZARD",
+      "type": "percent",
+      "value": 20,
+      "desc": "20% off magical cheese emergencies."
+    },
+    {
+      "code": "TOTALLYREAL",
+      "type": "percent",
+      "value": 10,
+      "desc": "10% off this totally real fake order."
+    },
+    {
+      "code": "PIZZATIME",
+      "type": "flat",
+      "value": 3,
+      "desc": "$3 off because time is pizza."
+    }
+  ]
+}
