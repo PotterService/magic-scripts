@@ -1,0 +1,35 @@
+[
+  {
+    "id": "BGV-MPPBU6H4-6PGE",
+    "cardName": "Unicorn card",
+    "category": "Unicorn card",
+    "setName": "base",
+    "cardNumber": "1/30",
+    "rarity": "Unknown",
+    "year": "2016",
+    "language": "English",
+    "frontImageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/691611_in_1000x1000.jpg",
+    "slabFrontImageUrl": "",
+    "finalGrade": "9",
+    "gradeConfidence": "Medium",
+    "gradingNotes": "this is for testing",
+    "authStatus": "Verified authentic",
+    "isSlabbed": true,
+    "slabbedBy": "Bow Grade Vault",
+    "slabCert": "test-1",
+    "slabDate": "2026-05-31",
+    "currentOwner": "Pug",
+    "currentLocation": "Binder",
+    "pricingUrl": "https://www.tcgplayer.com/product/691611/magic-secret-lair-drop-series-generous-gift-2534?page=1&Language=English",
+    "estimatedValue": "$5.41",
+    "lastPriceChecked": "2026-05-28",
+    "ownerHistory": [
+      {
+        "owner": "Pug",
+        "date": "2026-05-28",
+        "notes": "Current"
+      }
+    ],
+    "lastUpdated": "2026-05-28"
+  }
+]

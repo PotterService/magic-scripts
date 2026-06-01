@@ -1,0 +1,18 @@
+[
+  {
+    "id": "BCV-MM-001",
+    "cardName": "Carla, Mighty Hippo",
+    "category": "Myth & Mischief",
+    "setName": "Myth & Mischief",
+    "cardNumber": "001/013",
+    "rarity": "Legendary",
+    "edition": "Prototype",
+    "frontImage": "images/Carla.png",
+    "cardType": "Legendary Creature",
+    "rulesText": "Vigilance. When Carla enters, create three tokens.",
+    "flavorText": "No matter how wild the jungle gets, Mom runs the herd.",
+    "featured": true,
+    "dateAdded": "2026-05-30",
+    "lastUpdated": "2026-05-30"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "BOOSTER-MM-001",
+    "name": "Myth & Mischief Booster Pack",
+    "type": "booster-pack",
+    "setName": "Myth & Mischief",
+    "image": "boosterpack/myth-mischief-pack.png",
+    "price": "Contact for pricing",
+    "description": "Request a custom booster pack from this set.",
+    "available": true
+  },
+  {
+    "id": "BOOSTERBOX-MM-001",
+    "name": "Myth & Mischief Booster Box",
+    "type": "booster-box",
+    "setName": "Myth & Mischief",
+    "image": "boosterbox/myth-mischief-box.png",
+    "price": "Contact for pricing",
+    "description": "Request a custom booster box from this set.",
+    "available": true
+  }
+]

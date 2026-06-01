@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ownership Request | Bow Card Vault</title><link rel="stylesheet" href="../css/styles.css"></head><body><header class="top"><div class="top-inner"><a class="brand" href="../index.html"><span class="brand-mark">BCV</span><div><strong>Bow Card Vault</strong><small>Creator Vault • Grade Vault • Boosters</small></div></a><button id="menuBtn" class="menu">☰</button><nav id="nav" class="nav"><a href="../index.html">Vault</a><a href="creator.html">Creator Vault</a><a href="grade.html">Grade Vault</a><a href="boosters.html">Boosters</a><a href="ownership.html">Ownership</a><a class="cart-pill" href="cart.html">Cart <span id="cartCount">0</span></a></nav></div></header>
+
+<main class="page">
+  <section class="panel">
+    <p class="eyebrow">Ownership Request</p>
+    <h1>Request Ownership Transfer</h1>
+    <div class="notice">
+      <strong>Important:</strong> Bow Card Vault may reach out to the previous owner to verify transfer of ownership. If confirmation is not received, the request may stay pending or be rejected.
+      <br><br>
+      <strong>Tip:</strong> To make transfers quicker, it may be faster if the previous owner submits the transfer request from their own email.
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>How to submit by email</h2>
+    <ol>
+      <li>Fill out the form below.</li>
+      <li>Click <strong>Create Email Request</strong>.</li>
+      <li>Before sending the email, attach proof such as a receipt, letter of sale, transfer message, or purchase confirmation.</li>
+      <li>Also attach a clear photo of the card/slab/item.</li>
+    </ol>
+    <p><strong>Note:</strong> This static website cannot automatically attach files to your email. Please attach them manually before sending.</p>
+  </section>
+
+  <section class="panel">
+    <form class="form-grid" id="ownershipForm">
+      <label>Card / Slab ID<input id="cardId" placeholder="BGV or BCV ID"></label>
+      <label>New Owner<input id="newOwner" required></label>
+      <label>New Email<input id="newEmail" type="email"></label>
+      <label>How did you get it?<select id="method"><option>Purchased</option><option>Gifted</option><option>Trade</option><option>Other</option></select></label>
+      <label>Transfer PIN<input id="transferPin" placeholder="Current transfer PIN if available"></label>
+      <label>New Transfer PIN<input id="newTransferPin" placeholder="New PIN requested"></label>
+      <label class="full">Proof Reminder<div class="fake-file-note">Please attach receipt, letter of sale, proof of purchase, or transfer message to the email before sending.</div></label>
+      <label class="full">Item Photo Reminder<div class="fake-file-note">Please attach a clear photo of the card/slab/item to the email before sending.</div></label>
+      <label class="full">Notes<textarea id="notes" placeholder="Add any details that help verify ownership..."></textarea></label>
+      <div class="full"><button type="submit" class="primary">Create Email Request</button></div>
+    </form>
+  </section>
+</main>
+
+<footer>Bow Card Vault is a Bow Service project.</footer>
+<script src="../config.js"></script><script src="../js/utils.js"></script><script src="../js/data.js"></script><script src="../js/cart.js"></script>
+<script>function setupNav(){const m=document.getElementById('menuBtn'),n=document.getElementById('nav');if(m)m.onclick=()=>n.classList.toggle('open')}document.addEventListener('DOMContentLoaded',setupNav);</script>
+<script src="../js/ownership.js"></script>
+</body></html>
